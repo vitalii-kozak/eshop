@@ -9,9 +9,6 @@ import javax.naming.InitialContext;
 import javax.naming.NamingException;
 import javax.sql.DataSource;
 
-/**
- * Created by natalia_markova on 12.07.2016.
- */
 public class JdbcDaoFactory extends DaoFactory {
 
     private static final Logger logger = Logger.getLogger(JdbcDaoFactory.class);

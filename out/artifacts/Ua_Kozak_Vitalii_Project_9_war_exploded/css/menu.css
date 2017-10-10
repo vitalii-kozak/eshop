@@ -51,8 +51,9 @@
 
 h2 {
     font: bold italic 2em Georgia, Times, "Times New Roman", serif;
-    border-bottom: 3px solid black;
-    border-top: 3px solid black;
+    color: white;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
     margin: 0;
     padding: 0.5em 0 0.5em 0;
     font-size: 1em;
@@ -60,7 +61,7 @@ h2 {
     font-size: 28px;
     background: #9e0008;
     box-shadow: inset 0 0 5px rgba(53,86,129, 0.5);
-    text-shadow: 0 -1px rgba(238, 255, 211, 0.42);
+    text-shadow: 0 -1px rgba(0, 0, 0, 0.42);
 }
 
 h3 {

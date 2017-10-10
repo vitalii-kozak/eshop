@@ -4,9 +4,6 @@ package ua.kozak_vitalii.project_9.factories;
 import ua.kozak_vitalii.project_9.dao.*;
 import ua.kozak_vitalii.project_9.enums.DaoType;
 
-/**
- * Created by natalia_markova on 12.07.2016.
- */
 public abstract class DaoFactory {
     public abstract UserDao getUserDao();
     public abstract ProductDao getProductDao();
