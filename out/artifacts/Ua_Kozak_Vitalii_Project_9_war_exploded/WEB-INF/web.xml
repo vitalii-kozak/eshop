@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+    <servlet>
+        <servlet-name>ShoppingServlet</servlet-name>
+        <servlet-class>ua.kozak_vitalii.project_9.servlets.ShoppingServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ShoppingServlet</servlet-name>
+        <url-pattern>/ShoppingServlet</url-pattern>
+    </servlet-mapping>
+
+    <filter>
+        <filter-name>LocalizationFilter</filter-name>
+        <filter-class>ua.kozak_vitalii.project_9.filters.LocalizationFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>LocalizationFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+        <dispatcher>FORWARD</dispatcher>
+    </filter-mapping>
+
+    <filter-mapping>
+        <filter-name>LocalizationFilter</filter-name>
+        <servlet-name>ShoppingServlet</servlet-name>
+    </filter-mapping>
+
+    <welcome-file-list>
+        <welcome-file>/WEB-INF/jsp/index.jsp</welcome-file>
+    </welcome-file-list>
+
+</web-app>
