@@ -1,6 +1,6 @@
 <%@ page session="true" import="java.util.*, ua.kozak_vitalii.project_9.domain.Category, ua.kozak_vitalii.project_9.domain.Product, ua.kozak_vitalii.project_9.domain.ProductOrder" %>
 <%
- List buylist = (List) session.getAttribute("shopping.shoppingcart");
+ List buylist = (List) session.getAttribute("shoppingcart");
  if (buylist != null && (buylist.size() > 0)) {
 %>
 <center>

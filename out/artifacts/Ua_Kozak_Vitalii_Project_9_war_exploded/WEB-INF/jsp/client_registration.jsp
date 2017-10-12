@@ -3,12 +3,12 @@
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 
 <html>
+<jsp:include page="languages.jsp"/> <br>
 <head>
 	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/menu.css"/>
 	<h2> &nbsp;&nbsp; Registration</h2>
 </head>
   <body>
-  <jsp:include page="languages.jsp"/>
   <span>${message}</span>
   <span class="error">${error}</span>
   <br>
@@ -34,7 +34,6 @@
                 <tr>
                   <td>user_type:</td>
                     <td>
-                      <%--<input type="radio" name="user_type" value="admin" checked/> ADMIN--%>
                       <input type="radio" name="user_type" value="client" checked/> CLIENT
                       <br/>
                     </td>

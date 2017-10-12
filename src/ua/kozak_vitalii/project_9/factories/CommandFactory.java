@@ -4,10 +4,6 @@ import ua.kozak_vitalii.project_9.commands.*;
 import ua.kozak_vitalii.project_9.enums.DaoType;
 import ua.kozak_vitalii.project_9.enums.ServiceType;
 
-import javax.naming.Context;
-import javax.naming.InitialContext;
-import javax.naming.NamingException;
-import javax.sql.DataSource;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -27,6 +23,13 @@ public class CommandFactory {
         commands.put("AUTHENTICATE", new AuthenticateCommand(serviceFactory.getAdminService()));
         commands.put("CLIENT_REGISTRATION", new ClientRegistrationCommand());
         commands.put("ADD_NEW_USER", new AddNewUserCommand(serviceFactory.getAdminService()));
+        commands.put("ADD_NEW_USER_BY_ADMIN", new AddNewUserAdminCommand(serviceFactory.getAdminService()));
+        commands.put("UPDATE_USER", new MenuUpdateUserAdminCommand(serviceFactory.getAdminService()));
+        commands.put("SELECT_USER", new SelectUserAdminCommand(serviceFactory.getAdminService()));
+        commands.put("UPDATE_USER_INFO", new UpdateUserInfoAdminCommand(serviceFactory.getAdminService()));
+
+        commands.put("LOGOUT", new LogOutCommand());
+
     }
 
     private CommandFactory() {

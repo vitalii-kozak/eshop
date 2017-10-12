@@ -2,6 +2,7 @@ package ua.kozak_vitalii.project_9.commands;
 
 import org.apache.log4j.Logger;
 import ua.kozak_vitalii.project_9.domain.User;
+import ua.kozak_vitalii.project_9.enums.UserType;
 import ua.kozak_vitalii.project_9.service.AdminService;
 
 import javax.servlet.http.HttpServletRequest;
@@ -18,7 +19,7 @@ public class AuthenticateCommand extends Command{
 
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) {
-
+        logger.debug("AuthenticateCommand()");
         User user = null;
         try {
              user = adminService.login(request.getParameter("user_name"), request.getParameter("password"));
@@ -32,6 +33,9 @@ public class AuthenticateCommand extends Command{
         } else {
             request.getSession().setAttribute("user", user);
             request.setAttribute("message", user.getName());
+            if (user.getUserType() == UserType.ADMIN) {
+                return "/admin_page.jsp";
+            }
             return "/index.jsp";
         }
     }

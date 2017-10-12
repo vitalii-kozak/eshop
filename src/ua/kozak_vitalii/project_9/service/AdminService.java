@@ -58,13 +58,22 @@ public interface AdminService {
      *  @param isBlocked is user in black list
      *  @return <code><b>true</b></code> if operation's successful, otherwise - <code><b>false</b></code>
      */
-    boolean changeUserData(User user, String password, String name, String surname, boolean isBlocked)  throws WrongUserDataException;
+    boolean changeUserData(User user, String password, String passwordConfirmation, String name, String surname, boolean isBlocked)  throws WrongUserDataException;
 
     /**
      *  Returns list of all users who have user type == Client
      *  @return list of Client objects
      */
     List<Client> getClients();
+
+    /**
+     *  Returns a User object by given id.
+     *  If no record with such id found, returns null
+     *  @param userId id of the Product to be found
+     *  @return found Product object
+     */
+    User getUser(Long userId);
+
 
     /**
      *  Returns list of all users

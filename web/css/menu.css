@@ -164,3 +164,70 @@ select.selectField {
     position:relative;
     top:1px;
 }
+
+.myButtonMenu {
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #9e0008), color-stop(1, #9e0008));
+    background:-moz-linear-gradient(top, #9e0008 5%, #9e0008 100%);
+    background:-webkit-linear-gradient(top, #9e0008 5%, #9e0008 100%);
+    background:-o-linear-gradient(top, #9e0008 5%, #9e0008 100%);
+    background:-ms-linear-gradient(top, #9e0008 5%, #9e0008 100%);
+    background:linear-gradient(to bottom, #9e0008 5%, #9e0008 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#9e0008', endColorstr='#9e0008',GradientType=0);
+    background-color:#9e0008;
+    -moz-border-radius:0px;
+    -webkit-border-radius:0px;
+    border-radius:0px;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family: 'Muli', sans-serif;
+    font-size:14px;
+    padding: 0;
+    text-decoration:none;
+    outline: none;
+    border: 0;
+
+}
+.myButtonMenu:hover {
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #d40a01), color-stop(1, #d40a01));
+    background:-moz-linear-gradient(top, #d40a01 5%, #d40a01 100%);
+    background:-webkit-linear-gradient(top, #d40a01 5%, #d40a01 100%);
+    background:-o-linear-gradient(top, #d40a01 5%, #d40a01 100%);
+    background:-ms-linear-gradient(top, #d40a01 5%, #d40a01 100%);
+    background:linear-gradient(to bottom, #d40a01 5%, #d40a01 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#d40a01', endColorstr='#d40a01',GradientType=0);
+    background-color: #d40a01;
+    text-decoration:none;
+    outline: none;
+    padding: 0;
+    border: 0;
+}
+.myButtonMenu:active {
+    position:relative;
+    top:1px;
+}
+
+.myMenuButton {
+    color: #fff; /* цвет текста */
+    text-decoration: none; /* убирать подчёркивание у ссылок */
+    user-select: none; /* убирать выделение текста */
+    background: rgb(158, 0, 8); /* фон кнопки */
+    padding: .7em 1.5em; /* отступ от текста */
+    outline: none; /* убирать контур в Mozilla */
+    background-color:#9e0008;
+    text-decoration:none;
+}
+.myMenuButton:hover {
+    color: #fff; /* цвет текста */
+    text-decoration: none; /* убирать подчёркивание у ссылок */
+    user-select: none; /* убирать выделение текста */
+    background: rgb(158, 0, 8); /* фон кнопки */
+    padding: .7em 1.5em; /* отступ от текста */
+    background-color:#9e0008;
+    text-decoration:none;
+    outline: none;
+}
+.myButtonMenu:active {
+    position:relative;
+    top:1px;
+}

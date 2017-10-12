@@ -1,13 +1,12 @@
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@ page contentType="text/html;charset=UTF-8" pageEncoding="UTF-8" language="java" errorPage="exception.jsp" %>
-
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/menu.css"/>
 <html>
+<jsp:include page="languages.jsp"/> <br>
 <head>
-    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/menu.css"/>
     <h2> &nbsp;&nbsp; Authentication</h2>
 </head>
 <body>
-<jsp:include page="languages.jsp"/>
 <span>${message}</span>
 <span class="error">${error}</span>
 <form name="client registration" action="ShoppingServlet" method="POST">

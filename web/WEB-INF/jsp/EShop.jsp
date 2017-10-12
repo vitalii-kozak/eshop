@@ -20,8 +20,8 @@
    <form name="shoppingForm"
          action="ShoppingServlet"
          method="POST">
-    <b>shopping.product:</b>
-    <select name=Product>
+    <b>products:</b>
+    <select name=product>
      <option>1 | Toshiba | 1 | HDD | $104.95</option>
      <option>2 | Hitachi | 1 | HDD | $106.95</option>
      <option>3 | Western Digital | 1 | HDD | $106.95</option>

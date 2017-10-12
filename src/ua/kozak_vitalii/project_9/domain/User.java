@@ -70,8 +70,6 @@ public abstract class User implements Serializable {
         this.surname = surname;
     }
 
-
-
     public void setIsBlocked(boolean isBlocked) {
         this.isBlocked = isBlocked;
     }
@@ -115,7 +113,7 @@ public abstract class User implements Serializable {
 
     @Override
     public String toString() {
-        String isBlockedText =  isBlocked ?  "Denied" : "Allowed";
+        String isBlockedText =  isBlocked ?  "Banned" : "Allowed";
         return "User{" +
                 "id=" + id +
                 ", login='" + login + '\'' +
@@ -124,5 +122,9 @@ public abstract class User implements Serializable {
                 ", surname='" + surname + '\'' +
                 ", Access='" + isBlockedText +
                 '}';
+    }
+
+    public String getPresentation() {
+        return getId() + " | " + getFullName();
     }
 }

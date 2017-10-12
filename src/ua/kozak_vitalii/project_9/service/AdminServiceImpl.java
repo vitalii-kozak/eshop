@@ -36,6 +36,11 @@ public class AdminServiceImpl implements AdminService {
         return userDao.getClients();
     }
 
+    @Override
+    public User getUser(Long userId) {
+        return userDao.read(userId);
+    }
+
     /**
      * @throws AuthenticationException {@inheritDoc}
      */
@@ -77,15 +82,15 @@ public class AdminServiceImpl implements AdminService {
      * @throws WrongUserDataException {@inheritDoc}
      */
     @Override
-    public boolean changeUserData(User user, String password, String name, String surname, boolean isBlocked)  throws WrongUserDataException {
-        if (!user.getPassword().equals(password)) {
-            throw new WrongUserDataException("Wrong password");
-        }
+    public boolean changeUserData(User user, String password, String passwordConfirmation, String name, String surname, boolean isBlocked)  throws WrongUserDataException {
+
+        checkPassword(password, passwordConfirmation);
         checkDataIsNotEmpty(name, "Name");
         checkDataIsNotEmpty(surname, "Surname");
         user.setName(name);
         user.setSurname(surname);
         user.setBlocked(isBlocked);
+
         return userDao.update(user);
     }
 
@@ -170,6 +175,7 @@ public class AdminServiceImpl implements AdminService {
     public Product getProduct(Long productId) {
         return productDao.read(productId);
     }
+
 
     @Override
     public boolean updateProduct(Product product) throws WrongProductDataException {

@@ -18,38 +18,36 @@ public class AddToCartCommand extends Command {
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) {
 
-        HttpSession session = request.getSession(false);
+        HttpSession session = request.getSession(true);
 
-        List buylist=
-                (List) session.getAttribute("shopping.shoppingcart");
+        List buylist= (List) session.getAttribute("shoppingcart");
 
         boolean match=false;
-        ProductOrder aProductOrder = GetProduct(request);
+        ProductOrder newProductOrder = GetProduct(request);
         if (buylist==null) {
             //добавить первый товар в корзину
             buylist = new ArrayList(); //первый заказ
-            buylist.add(aProductOrder);
+            buylist.add(newProductOrder);
         } else { // не первая покупка
             for (int i=0; i< buylist.size(); i++) {
                 ProductOrder productOrder = (ProductOrder) buylist.get(i);
-                if (productOrder.getProduct().getId().equals(aProductOrder.getProduct().getId())) {
-                    productOrder.setProductQuantity(productOrder.getProductQuantity() + aProductOrder.getProductQuantity());
+                if (productOrder.getProduct().getId().equals(newProductOrder.getProduct().getId())) {
+                    productOrder.setProductQuantity(productOrder.getProductQuantity() + newProductOrder.getProductQuantity());
                     buylist.set(i, productOrder);
                     match = true;
-                } //конец блока If
-            } // конец блока For
+                }
+            }
             if (!match)
-                buylist.add(aProductOrder);
+                buylist.add(newProductOrder);
         }
-        session.setAttribute("shopping.shoppingcart", buylist);
+        session.setAttribute("shoppingcart", buylist);
         return "/EShop.jsp";
     }
 
-    private ProductOrder GetProduct(HttpServletRequest req) {
-        //представьте, что это скриптлет... ужасно, не правда ли?
-        String myCd = req.getParameter("Product");
-        String qty = req.getParameter("qty");
-        StringTokenizer t = new StringTokenizer(myCd,"|");
+    private ProductOrder GetProduct(HttpServletRequest request) {
+        String requestProduct = request.getParameter("product");
+        String qty = request.getParameter("qty");
+        StringTokenizer t = new StringTokenizer(requestProduct,"|");
         String productId = t.nextToken();
         String productName = t.nextToken();
         String categoryId = t.nextToken();

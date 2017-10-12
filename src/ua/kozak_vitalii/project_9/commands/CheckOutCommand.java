@@ -15,7 +15,7 @@ public class CheckOutCommand extends Command {
         HttpSession session = request.getSession(false);
 
         List buylist=
-                (List) session.getAttribute("shopping.shoppingcart");
+                (List) session.getAttribute("shoppingcart");
         BigDecimal total = new BigDecimal("0.00");
         for (int i=0; i< buylist.size();i++) {
             ProductOrder anOrder = (ProductOrder) buylist.get(i);

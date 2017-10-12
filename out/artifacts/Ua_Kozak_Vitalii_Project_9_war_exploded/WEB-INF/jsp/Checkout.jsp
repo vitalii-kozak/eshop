@@ -2,7 +2,7 @@
 <html>
 <head>
  <%@ page session="true"
-          import="java.util.*, shopping.CD" %>
+          import="java.util.*" %>
  <%@ page import="java.lang.reflect.Array" %>
  <html>
  <head>
@@ -26,7 +26,7 @@
     <td></td>
    </tr>
    <%
-    ArrayList buylist = (ArrayList) session.getAttribute("shopping.shoppingcart");
+    ArrayList buylist = (ArrayList) session.getAttribute("shoppingcart");
     String amount = (String) request.getAttribute("amount");
     for (int i=0; i < buylist.size();i++) {
      ProductOrder anOrder = (ProductOrder) buylist.get(i);
