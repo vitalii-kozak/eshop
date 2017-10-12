@@ -27,6 +27,11 @@ public class CommandFactory {
         commands.put("UPDATE_USER", new MenuUpdateUserAdminCommand(serviceFactory.getAdminService()));
         commands.put("SELECT_USER", new SelectUserAdminCommand(serviceFactory.getAdminService()));
         commands.put("UPDATE_USER_INFO", new UpdateUserInfoAdminCommand(serviceFactory.getAdminService()));
+        commands.put("CATEGORY_CREATE_MENU", new CategoryCreateCommand(serviceFactory.getAdminService()));
+        commands.put("CATEGORY_CREATE_LINK", new ReturnPageCategoryCreationCommand(serviceFactory.getAdminService()));
+        commands.put("ADD_NEW_CATEGORY_BY_ADMIN", new AddNewCategoryCommand(serviceFactory.getAdminService()));
+        commands.put("EDIT_CATEGORY_LINK", new ReturnPageEditCategoryCreationCommand(serviceFactory.getAdminService()));
+        commands.put("UPDATE_CATEGORY_IFO", new UpdateCategoryInfoAdminCommand(serviceFactory.getAdminService()));
 
         commands.put("LOGOUT", new LogOutCommand());
 

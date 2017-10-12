@@ -1,6 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" pageEncoding="UTF-8" language="java" %>
 <%--<%@ page contentType="text/html;charset=UTF-8" pageEncoding="UTF-8" language="java" errorPage="exception.jsp" %>--%>
-<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <html>
 <jsp:include page="languages.jsp"/> <br>
@@ -15,7 +15,7 @@
     <li><input type="hidden" name="action" value="INFO"> <input class="myButtonMenu" type="submit" value="Info"></li><li> &nbsp; </li>
     <li><form name="client registration" action="ShoppingServlet" method="post"><input type="hidden" name="action" value="CLIENT_REGISTRATION"> <input class="myButtonMenu" type="submit" value="Create User"></form></li><li> &nbsp; </li>
     <li><form name="update user" action="ShoppingServlet" method="post"><input type="hidden" name="action" value="UPDATE_USER"> <input class="myButtonMenu" type="submit" value="Update User"></form></li><li> &nbsp; </li>
-    <li><form name="update user" action="ShoppingServlet" method="post"><input type="hidden" name="action" value="CATEGORY_CREATE"> <input class="myButtonMenu" type="submit" value="Category"></form></li><li> &nbsp; </li>
+    <li><form name="update user" action="ShoppingServlet" method="post"><input type="hidden" name="action" value="CATEGORY_CREATE_MENU"> <input class="myButtonMenu" type="submit" value="Category"></form></li><li> &nbsp; </li>
     <li><form name="update user" action="ShoppingServlet" method="post"><input type="hidden" name="action" value="PRODUCT__CREATE"> <input class="myButtonMenu" type="submit" value="Product"></form></li><li> &nbsp; </li>
     <li><form name="logout" action="ShoppingServlet" method="post"><input type="hidden" name="action" value="LOGOUT"> <input class="myButtonMenu" type="submit" value="Logout"></form></li><li> &nbsp; </li>
 </ul>
@@ -28,7 +28,7 @@
     <fieldset>
         <table>
             <tr>
-                <td>Id:</td><td><input id="user_id" class = "dataField" type="text" name="user_id" value="${user_id}"/><br/></td>
+                <td>Id:</td><td><input id="user_id" class = "dataField" type="text" readonly name="user_id" value="${user_id}"/><br/></td>
             </tr>
             <tr>
                 <td>Login:</td><td><input id="login" class = "dataField" type="text" disabled name="login" value="${login}"/><br/></td>
@@ -48,7 +48,7 @@
             <tr>
                 <td>user_status:</td>
                 <td>
-                    BANNED: <input type="checkbox" id="is_blocked" name="is_blocked" value="value_1"/>
+                    BANNED: <input type="checkbox" id="is_blocked" name="is_blocked" ${is_blocked} />
                     <br/>
                 </td>
             </tr>

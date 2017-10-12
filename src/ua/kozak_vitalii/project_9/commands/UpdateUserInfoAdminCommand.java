@@ -40,12 +40,8 @@ public class UpdateUserInfoAdminCommand extends Command {
         String passwordConfirmation = request.getParameter("password_confirmation");
         String name = request.getParameter("name");
         String surname = request.getParameter("surname");
-
-        System.out.println("**************************************************************");
-        System.out.println(request.getParameter("is_blocked").trim());
-
-        int isBlockedValue = new Integer(request.getParameter("is_blocked").trim()).intValue();
-        boolean isBlocked = isBlockedValue == 1 ? true : false;
+        boolean isBlocked = true;
+        if (request.getParameter("is_blocked") == null){ isBlocked = false; }
 
         try {
             boolean result = adminService.changeUserData(newUser, password, passwordConfirmation, name, surname, isBlocked);
@@ -60,8 +56,11 @@ public class UpdateUserInfoAdminCommand extends Command {
                 request.setAttribute("name", newUser.getName());
                 request.setAttribute("surname", newUser.getSurname());
 
-                if(newUser.getIsBlocked()) request.setAttribute("is_blocked", "1");
-                else request.setAttribute("is_blocked", "0");
+                System.out.println(newUser.getIsBlocked());
+                if (newUser.getIsBlocked()) {
+                    request.setAttribute("is_blocked", "checked");
+                }
+
 
                 return "/admin_user_update.jsp";
 
@@ -79,8 +78,10 @@ public class UpdateUserInfoAdminCommand extends Command {
         request.setAttribute("name", newUser.getName());
         request.setAttribute("surname", newUser.getSurname());
 
-        if(newUser.getIsBlocked()) request.setAttribute("is_blocked", "1");
-            else request.setAttribute("is_blocked", "0");
+        System.out.println(newUser.getIsBlocked());
+        if (newUser.getIsBlocked()) {
+            request.setAttribute("is_blocked", "checked");
+        }
 
         return "/admin_user_update.jsp";
     }

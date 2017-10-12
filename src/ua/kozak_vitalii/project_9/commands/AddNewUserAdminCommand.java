@@ -23,11 +23,9 @@ public class AddNewUserAdminCommand extends Command {
         UserType userType;
         userType = UserType.valueOf(request.getParameter("user_type").toUpperCase());
 
-        System.out.println("**************************************************************");
-        System.out.println(request.getParameter("is_blocked").trim());
-
-
-        boolean isBlocked = request.getParameter("is_blocked").trim().equals("value_1") ? true : false;
+        //boolean isBlocked = request.getParameter("is_blocked").trim().equals("1") ? true : false;
+        boolean isBlocked = true;
+        if (request.getParameter("is_blocked") == null){ isBlocked = false; }
         String login = request.getParameter("login");
         String password = request.getParameter("password");
         String passwordConfirmation = request.getParameter("password_confirmation");

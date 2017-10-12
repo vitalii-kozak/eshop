@@ -10,7 +10,6 @@
     <h2> &nbsp;&nbsp; Registration</h2>
 </head>
 <body>
-
 <ul id="main-menu">
     <li> &nbsp; </li>
     <li><input type="hidden" name="action" value="INFO"> <input class="myButtonMenu" type="submit" value="Info"></li><li> &nbsp; </li>
@@ -20,8 +19,22 @@
     <li><form name="update user" action="ShoppingServlet" method="post"><input type="hidden" name="action" value="PRODUCT__CREATE"> <input class="myButtonMenu" type="submit" value="Product"></form></li><li> &nbsp; </li>
     <li><form name="logout" action="ShoppingServlet" method="post"><input type="hidden" name="action" value="LOGOUT"> <input class="myButtonMenu" type="submit" value="Logout"></form></li><li> &nbsp; </li>
 </ul>
-
 <span>${message}</span>
 <span class="error">${error}</span>
+<jsp:include page="users.jsp" flush="true" />
+<br>
+<form name="category_creation" action="ShoppingServlet" method="POST">
+    <fieldset>
+        <table>
+            <tr>
+                <td>Name:</td><td><input class = "dataField" id="name" type="text" name="name" value=""/><br/></td>
+            </tr>
+
+            <tr>
+                <td></td><td><input type="hidden" name="action" value="ADD_NEW_CATEGORY"> <input type="submit" class="myButton" value="Add new category"/></td>
+            </tr>
+        </table>
+    </fieldset>
+</form>
 </body>
 </html>

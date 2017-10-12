@@ -39,7 +39,10 @@ public class SelectUserAdminCommand extends Command {
         request.setAttribute("name", newUser.getName());
         request.setAttribute("surname", newUser.getSurname());
 
-        if(newUser.getIsBlocked()) request.setAttribute("is_blocked", "value_1");
+        System.out.println(newUser.getIsBlocked());
+        if (newUser.getIsBlocked()) {
+            request.setAttribute("is_blocked", "checked");
+        }
 
         return "/admin_user_update.jsp";
     }

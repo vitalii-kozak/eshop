@@ -48,4 +48,8 @@ public class Category {
                 ", name='" + name + '\'' +
                 '}';
     }
+
+    public String getPresentation() {
+        return getId() + " | " + getName();
+    }
 }

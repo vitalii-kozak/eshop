@@ -71,4 +71,7 @@ public class Product {
                 ", price=" + price +
                 '}';
     }
+    public String getPresentation() {
+        return getId() + " | " + getName() + " | " + getPrice();
+    }
 }

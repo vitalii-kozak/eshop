@@ -7,20 +7,23 @@ import ua.kozak_vitalii.project_9.service.AdminService;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.util.List;
 
-public class ClientRegistrationCommand extends Command {
+public class CategoryCreateCommand extends Command {
 
     private static final Logger logger = Logger.getLogger(AdminService.class);
+    private final AdminService adminService;
+
+    public CategoryCreateCommand(AdminService adminService) {
+        this.adminService = adminService;
+    }
 
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) {
+        logger.debug("CategoryCreateCommand()");
+        List categoriesList = adminService.getCategories();
+        request.setAttribute("categorieslist", categoriesList);
 
-        logger.debug("ClientRegistrationCommand()");
-        User user = (User) request.getSession().getAttribute("user");
-
-        if ((user != null) && (user.getUserType() == UserType.ADMIN)) {
-            return "/admin_registration.jsp";
-        }
-        return "/client_registration.jsp";
+        return "/category.jsp";
     }
 }

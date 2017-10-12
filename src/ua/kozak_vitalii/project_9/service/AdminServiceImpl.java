@@ -9,10 +9,7 @@ import ua.kozak_vitalii.project_9.domain.Client;
 import ua.kozak_vitalii.project_9.domain.Product;
 import ua.kozak_vitalii.project_9.domain.User;
 import ua.kozak_vitalii.project_9.enums.UserType;
-import ua.kozak_vitalii.project_9.exceptions.AuthenticationException;
-import ua.kozak_vitalii.project_9.exceptions.RegistrationException;
-import ua.kozak_vitalii.project_9.exceptions.WrongProductDataException;
-import ua.kozak_vitalii.project_9.exceptions.WrongUserDataException;
+import ua.kozak_vitalii.project_9.exceptions.*;
 
 import java.math.BigDecimal;
 import java.util.List;
@@ -203,5 +200,37 @@ public class AdminServiceImpl implements AdminService {
         }
         Product product = new Product(productName, category, price);
         return productDao.create(product) != null;
+    }
+
+    @Override
+    public boolean addNewCategory(String categoryName) throws WrongCategoryDataException {
+        if (categoryName.isEmpty()) {
+            throw new WrongCategoryDataException("Category name is a required field!");
+        }
+        Category category = new Category(categoryName);
+
+        return categoryDao.create(category) != null;
+    }
+
+    @Override
+    public Category getCategory(Long categoryId) {
+        return categoryDao.read(categoryId);
+    }
+
+    @Override
+    public List<Category> getCategories() {
+        return categoryDao.findAll();
+    }
+
+    @Override
+    public boolean updateCategory(Category category) throws WrongCategoryDataException {
+        if (category.getName().isEmpty()) {
+            throw new WrongCategoryDataException("Category name can't be empty");
+        }
+        if (category.getId() == null) {
+            return categoryDao.create(category) != null;
+        } else {
+            return categoryDao.update(category);
+        }
     }
 }

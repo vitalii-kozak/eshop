@@ -1,6 +1,6 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <div align="left">
- <form name="usersForm" action="ShoppingServlet" method="POST">
+ <form name="users_form" action="ShoppingServlet" method="POST">
   <b>Choose user :</b>
   <select name=users.user_selected>
       <c:forEach var="user" items="${userslist}">
