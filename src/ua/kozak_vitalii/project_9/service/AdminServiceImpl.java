@@ -179,6 +179,9 @@ public class AdminServiceImpl implements AdminService {
         if (product.getName().isEmpty()) {
             throw new WrongProductDataException("Product name can't be empty");
         }
+        if (product.getPrice() == null) {
+            throw new WrongProductDataException("Price is a required field!");
+        }
         if (product.getId() == null) {
             return productDao.create(product) != null;
         } else {

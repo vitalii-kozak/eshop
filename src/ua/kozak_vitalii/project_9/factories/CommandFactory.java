@@ -20,6 +20,7 @@ public class CommandFactory {
         commands.put("ADD", new AddToCartCommand());
         commands.put("DELETE", new DeleteFromCartCommand());
         commands.put("CHECKOUT", new CheckOutCommand());
+
         commands.put("AUTHENTICATE", new AuthenticateCommand(serviceFactory.getAdminService()));
         commands.put("CLIENT_REGISTRATION", new ClientRegistrationCommand());
         commands.put("ADD_NEW_USER", new AddNewUserCommand(serviceFactory.getAdminService()));
@@ -27,11 +28,18 @@ public class CommandFactory {
         commands.put("UPDATE_USER", new MenuUpdateUserAdminCommand(serviceFactory.getAdminService()));
         commands.put("SELECT_USER", new SelectUserAdminCommand(serviceFactory.getAdminService()));
         commands.put("UPDATE_USER_INFO", new UpdateUserInfoAdminCommand(serviceFactory.getAdminService()));
+
         commands.put("CATEGORY_CREATE_MENU", new CategoryCreateCommand(serviceFactory.getAdminService()));
         commands.put("CATEGORY_CREATE_LINK", new ReturnPageCategoryCreationCommand(serviceFactory.getAdminService()));
         commands.put("ADD_NEW_CATEGORY_BY_ADMIN", new AddNewCategoryCommand(serviceFactory.getAdminService()));
         commands.put("EDIT_CATEGORY_LINK", new ReturnPageEditCategoryCreationCommand(serviceFactory.getAdminService()));
-        commands.put("UPDATE_CATEGORY_IFO", new UpdateCategoryInfoAdminCommand(serviceFactory.getAdminService()));
+        commands.put("UPDATE_CATEGORY_INFO", new UpdateCategoryInfoAdminCommand(serviceFactory.getAdminService()));
+
+        commands.put("PRODUCT_CREATE_MENU", new ProductCreateCommand(serviceFactory.getAdminService()));
+        commands.put("PRODUCT_CREATE_LINK", new ReturnPageProductCreationCommand(serviceFactory.getAdminService()));
+        commands.put("ADD_NEW_PRODUCT_BY_ADMIN", new AddNewProductCommand(serviceFactory.getAdminService()));
+        commands.put("EDIT_PRODUCT_LINK", new ReturnPageEditProductCreationCommand(serviceFactory.getAdminService()));
+        commands.put("UPDATE_PRODUCT_INFO", new UpdateProductInfoAdminCommand(serviceFactory.getAdminService()));
 
         commands.put("LOGOUT", new LogOutCommand());
 

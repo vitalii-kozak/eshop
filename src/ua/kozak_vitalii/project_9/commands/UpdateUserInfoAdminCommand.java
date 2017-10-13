@@ -56,6 +56,7 @@ public class UpdateUserInfoAdminCommand extends Command {
                 request.setAttribute("name", newUser.getName());
                 request.setAttribute("surname", newUser.getSurname());
 
+
                 System.out.println(newUser.getIsBlocked());
                 if (newUser.getIsBlocked()) {
                     request.setAttribute("is_blocked", "checked");

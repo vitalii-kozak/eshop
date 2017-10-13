@@ -3,11 +3,12 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <html>
-<jsp:include page="languages.jsp"/> <br>
+<jsp:include page="languages.jsp"/>
+<br>
 
 <head>
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/menu.css"/>
-    <h2> &nbsp;&nbsp; Registration</h2>
+    <h2> &nbsp;&nbsp; Products</h2>
 </head>
 <body>
 <ul id="main-menu">
@@ -22,26 +23,27 @@
 <span>${message}</span>
 <span class="error">${error}</span>
 <br>
-<jsp:include page="categories.jsp" flush="true" />
+<jsp:include page="products.jsp" flush="true"/>
 
-<form name="categories_list" action="ShoppingServlet" method="POST">
+<form name="products_list" action="ShoppingServlet" method="POST">
     <fieldset>
         <table width="100%">
             <thead>
             <tr>
-                <td><b><CATEGORIES/></b></td>
+                <td><b>
+                    <PRODUCTS/>
+                </b></td>
                 <td></td>
             </tr>
             </thead>
             <tbody>
-            <c:forEach var="category" items="${categorieslist}">
+            <c:forEach var="product" items="${productslist}">
                 <tr>
-                    <td valign="center">${category.presentation}</td>
+                    <td valign="center">${product.presentation}</td>
                 </tr>
             </c:forEach>
             </tbody>
         </table>
-
     </fieldset>
 </form>
 </body>

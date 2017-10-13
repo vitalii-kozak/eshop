@@ -72,6 +72,6 @@ public class Product {
                 '}';
     }
     public String getPresentation() {
-        return getId() + " | " + getName() + " | " + getPrice();
+        return getId() + " | " + getName() + " | " + getCategory().getId() + " | " + getCategory().getName() + " | " + getPrice();
     }
 }

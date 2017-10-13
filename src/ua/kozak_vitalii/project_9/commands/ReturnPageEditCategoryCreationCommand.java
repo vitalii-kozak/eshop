@@ -35,10 +35,10 @@ public class ReturnPageEditCategoryCreationCommand extends Command {
     }
 
     private Category GetCategoryFromRequest(HttpServletRequest request) {
-        String users = request.getParameter("categories.category_selected");
-        StringTokenizer t = new StringTokenizer(users,"|");
-        String userId = t.nextToken();
+        String items = request.getParameter("categories.category_selected");
+        StringTokenizer t = new StringTokenizer(items,"|");
+        String itemId = t.nextToken();
 
-        return adminService.getCategory(new Long(userId.trim()).longValue());
+        return adminService.getCategory(new Long(itemId.trim()).longValue());
     }
 }
