@@ -107,4 +107,4 @@ SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
 
-INSERT INTO Users (login, password, name, surname, isBlocked, user_type) VALUES ("admin", "admin", "Admin", "Adminco", "0", "admin");
+INSERT INTO Users (login, password, name, surname, isBlocked, user_type) VALUES ("admin", "1", "Ad", "Adminco", "0", "admin");

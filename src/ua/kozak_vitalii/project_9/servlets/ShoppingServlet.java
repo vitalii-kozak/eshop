@@ -67,7 +67,7 @@ public class ShoppingServlet extends HttpServlet {
             request.setAttribute("action", action);
 
             if (result == null) {
-                // error404 page non found
+                // error404 page not found
                 result = "/Error.jsp";
             }
         }

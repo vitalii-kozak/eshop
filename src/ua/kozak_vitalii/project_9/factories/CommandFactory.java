@@ -48,6 +48,9 @@ public class CommandFactory {
         commands.put("EDIT_PRODUCT_LINK", new ReturnPageEditProductCreationCommand(serviceFactory.getAdminService()));
         commands.put("UPDATE_PRODUCT_INFO", new UpdateProductInfoAdminCommand(serviceFactory.getAdminService()));
 
+        commands.put("CLIENT_INFO", new ClientInfoCommand());
+        commands.put("ORDER_CREATE_MENU", new OrderCreateCommand(serviceFactory.getAdminService()));
+
         commands.put("LOGOUT", new LogOutCommand());
 
     }

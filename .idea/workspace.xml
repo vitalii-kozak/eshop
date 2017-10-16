@@ -7,62 +7,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d93d0d2b-a17e-492d-b5e0-268fb9654392" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resource/l10n_ru_UA.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ua/kozak_vitalii/project_9/commands/IndexJspCommand.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ua/kozak_vitalii/project_9/commands/UserInfoCommand.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ua/kozak_vitalii/project_9/commands/UserPasswordChangeCommand.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ua/kozak_vitalii/project_9/commands/newUserPasswordCommand.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/admin_menu.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/user_edit_password.jsp" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Ua_Kozak_Vitalii_Project_9_war_exploded/WEB-INF/classes/log4j.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Ua_Kozak_Vitalii_Project_9_war_exploded/WEB-INF/classes/resource/i18n.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Ua_Kozak_Vitalii_Project_9_war_exploded/WEB-INF/classes/resource/i18n_en_US.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Ua_Kozak_Vitalii_Project_9_war_exploded/WEB-INF/classes/resource/i18n_ru_UA.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Ua_Kozak_Vitalii_Project_9/log4j.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Ua_Kozak_Vitalii_Project_9/resource/i18n.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Ua_Kozak_Vitalii_Project_9/resource/i18n_en_US.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Ua_Kozak_Vitalii_Project_9/resource/i18n_ru_UA.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resource/i18n.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resource/i18n_en_US.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resource/i18n_ru_UA.properties" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ua/kozak_vitalii/project_9/commands/ClientInfoCommand.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ua/kozak_vitalii/project_9/commands/OrderCreateCommand.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/client_menu.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Ua_Kozak_Vitalii_Project_9_war_exploded/WEB-INF/classes/ua/kozak_vitalii/project_9/commands/AuthenticateCommand.class" afterPath="$PROJECT_DIR$/out/artifacts/Ua_Kozak_Vitalii_Project_9_war_exploded/WEB-INF/classes/ua/kozak_vitalii/project_9/commands/AuthenticateCommand.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Ua_Kozak_Vitalii_Project_9_war_exploded/WEB-INF/classes/ua/kozak_vitalii/project_9/domain/Product.class" afterPath="$PROJECT_DIR$/out/artifacts/Ua_Kozak_Vitalii_Project_9_war_exploded/WEB-INF/classes/ua/kozak_vitalii/project_9/domain/Product.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Ua_Kozak_Vitalii_Project_9_war_exploded/WEB-INF/classes/ua/kozak_vitalii/project_9/factories/CommandFactory.class" afterPath="$PROJECT_DIR$/out/artifacts/Ua_Kozak_Vitalii_Project_9_war_exploded/WEB-INF/classes/ua/kozak_vitalii/project_9/factories/CommandFactory.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Ua_Kozak_Vitalii_Project_9_war_exploded/WEB-INF/classes/ua/kozak_vitalii/project_9/filters/LocalizationFilter.class" afterPath="$PROJECT_DIR$/out/artifacts/Ua_Kozak_Vitalii_Project_9_war_exploded/WEB-INF/classes/ua/kozak_vitalii/project_9/filters/LocalizationFilter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Ua_Kozak_Vitalii_Project_9_war_exploded/WEB-INF/classes/ua/kozak_vitalii/project_9/service/AdminServiceImpl.class" afterPath="$PROJECT_DIR$/out/artifacts/Ua_Kozak_Vitalii_Project_9_war_exploded/WEB-INF/classes/ua/kozak_vitalii/project_9/service/AdminServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Ua_Kozak_Vitalii_Project_9_war_exploded/WEB-INF/classes/ua/kozak_vitalii/project_9/servlets/ShoppingServlet.class" afterPath="$PROJECT_DIR$/out/artifacts/Ua_Kozak_Vitalii_Project_9_war_exploded/WEB-INF/classes/ua/kozak_vitalii/project_9/servlets/ShoppingServlet.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Ua_Kozak_Vitalii_Project_9/ua/kozak_vitalii/project_9/commands/AuthenticateCommand.class" afterPath="$PROJECT_DIR$/out/production/Ua_Kozak_Vitalii_Project_9/ua/kozak_vitalii/project_9/commands/AuthenticateCommand.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Ua_Kozak_Vitalii_Project_9/ua/kozak_vitalii/project_9/domain/Product.class" afterPath="$PROJECT_DIR$/out/production/Ua_Kozak_Vitalii_Project_9/ua/kozak_vitalii/project_9/domain/Product.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Ua_Kozak_Vitalii_Project_9/ua/kozak_vitalii/project_9/factories/CommandFactory.class" afterPath="$PROJECT_DIR$/out/production/Ua_Kozak_Vitalii_Project_9/ua/kozak_vitalii/project_9/factories/CommandFactory.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Ua_Kozak_Vitalii_Project_9/ua/kozak_vitalii/project_9/filters/LocalizationFilter.class" afterPath="$PROJECT_DIR$/out/production/Ua_Kozak_Vitalii_Project_9/ua/kozak_vitalii/project_9/filters/LocalizationFilter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Ua_Kozak_Vitalii_Project_9/ua/kozak_vitalii/project_9/service/AdminServiceImpl.class" afterPath="$PROJECT_DIR$/out/production/Ua_Kozak_Vitalii_Project_9/ua/kozak_vitalii/project_9/service/AdminServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Ua_Kozak_Vitalii_Project_9/ua/kozak_vitalii/project_9/servlets/ShoppingServlet.class" afterPath="$PROJECT_DIR$/out/production/Ua_Kozak_Vitalii_Project_9/ua/kozak_vitalii/project_9/servlets/ShoppingServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/Ua_Kozak_Vitalii_Project_9_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/Ua_Kozak_Vitalii_Project_9_war_exploded.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Ua_Kozak_Vitalii_Project_9.iml" afterPath="$PROJECT_DIR$/Ua_Kozak_Vitalii_Project_9.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Ua_Kozak_Vitalii_Project_9_war_exploded/WEB-INF/classes/resource/First_Step.sql" afterPath="$PROJECT_DIR$/out/artifacts/Ua_Kozak_Vitalii_Project_9_war_exploded/WEB-INF/classes/resource/First_Step.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Ua_Kozak_Vitalii_Project_9_war_exploded/WEB-INF/jsp/Error.jsp" afterPath="$PROJECT_DIR$/out/artifacts/Ua_Kozak_Vitalii_Project_9_war_exploded/WEB-INF/jsp/Error.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Ua_Kozak_Vitalii_Project_9_war_exploded/WEB-INF/jsp/client_page.jsp" afterPath="$PROJECT_DIR$/out/artifacts/Ua_Kozak_Vitalii_Project_9_war_exploded/WEB-INF/jsp/client_page.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Ua_Kozak_Vitalii_Project_9_war_exploded/WEB-INF/jsp/index.jsp" afterPath="$PROJECT_DIR$/out/artifacts/Ua_Kozak_Vitalii_Project_9_war_exploded/WEB-INF/jsp/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Ua_Kozak_Vitalii_Project_9_war_exploded/WEB-INF/jsp/languages.jsp" afterPath="$PROJECT_DIR$/out/artifacts/Ua_Kozak_Vitalii_Project_9_war_exploded/WEB-INF/jsp/languages.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Ua_Kozak_Vitalii_Project_9_war_exploded/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/out/artifacts/Ua_Kozak_Vitalii_Project_9_war_exploded/WEB-INF/web.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Ua_Kozak_Vitalii_Project_9/resource/First_Step.sql" afterPath="$PROJECT_DIR$/out/production/Ua_Kozak_Vitalii_Project_9/resource/First_Step.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/resource/First_Step.sql" afterPath="$PROJECT_DIR$/src/resource/First_Step.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/resource/l10n_ru_UA.properties" afterPath="$PROJECT_DIR$/src/resource/l10n_ru_UA.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ua/kozak_vitalii/project_9/commands/AuthenticateCommand.java" afterPath="$PROJECT_DIR$/src/ua/kozak_vitalii/project_9/commands/AuthenticateCommand.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ua/kozak_vitalii/project_9/factories/CommandFactory.java" afterPath="$PROJECT_DIR$/src/ua/kozak_vitalii/project_9/factories/CommandFactory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ua/kozak_vitalii/project_9/filters/LocalizationFilter.java" afterPath="$PROJECT_DIR$/src/ua/kozak_vitalii/project_9/filters/LocalizationFilter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ua/kozak_vitalii/project_9/service/AdminServiceImpl.java" afterPath="$PROJECT_DIR$/src/ua/kozak_vitalii/project_9/service/AdminServiceImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ua/kozak_vitalii/project_9/servlets/ShoppingServlet.java" afterPath="$PROJECT_DIR$/src/ua/kozak_vitalii/project_9/servlets/ShoppingServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/admin_menu.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/admin_menu.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/admin_page.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/admin_page.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/admin_product_create.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/admin_product_create.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/admin_registration.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/admin_registration.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/admin_user_update.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/admin_user_update.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/category.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/category.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/category_create_new.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/category_create_new.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/category_edit.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/category_edit.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/client_page.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/client_page.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/index.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/languages.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/languages.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/product.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/product.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/product_create_new.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/product_create_new.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/product_edit.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/product_edit.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -95,44 +60,44 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="admin_page.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/admin_page.jsp">
+      <file leaf-file-name="CommandFactory.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ua/kozak_vitalii/project_9/factories/CommandFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="23" />
+            <state relative-caret-position="459">
+              <caret line="50" column="49" lean-forward="false" selection-start-line="50" selection-start-column="49" selection-end-line="50" selection-end-column="49" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IndexJspCommand.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/ua/kozak_vitalii/project_9/commands/IndexJspCommand.java">
+      <file leaf-file-name="OrderCreateCommand.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ua/kozak_vitalii/project_9/commands/OrderCreateCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="8" column="26" lean-forward="false" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+            <state relative-caret-position="221">
+              <caret line="20" column="40" lean-forward="false" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProductCreateCommand.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ua/kozak_vitalii/project_9/commands/ProductCreateCommand.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="14" column="11" lean-forward="false" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
               <folding>
-                <element signature="e#285#286#0" expanded="true" />
-                <element signature="e#320#321#0" expanded="true" />
+                <element signature="e#489#490#0" expanded="true" />
+                <element signature="e#537#538#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ShoppingServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ua/kozak_vitalii/project_9/servlets/ShoppingServlet.java">
+      <file leaf-file-name="client_menu.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/client_menu.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="332">
-              <caret line="61" column="59" lean-forward="false" selection-start-line="61" selection-start-column="59" selection-end-line="61" selection-end-column="59" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="13" lean-forward="true" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+            <state relative-caret-position="85">
+              <caret line="5" column="21" lean-forward="true" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -197,10 +162,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/ua/kozak_vitalii/project_9/commands/ClientRegistrationCommand.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/client_registration.jsp" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/error404.jsp" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/exception.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/admin_category_create.jsp" />
         <option value="$PROJECT_DIR$/src/ua/kozak_vitalii/project_9/commands/AddNewCategoryCommand.java" />
         <option value="$PROJECT_DIR$/src/ua/kozak_vitalii/project_9/commands/CategoryCreateCommand.java" />
@@ -221,22 +182,16 @@
         <option value="$PROJECT_DIR$/src/ua/kozak_vitalii/project_9/commands/ProductCreateCommand.java" />
         <option value="$PROJECT_DIR$/src/ua/kozak_vitalii/project_9/commands/ReturnPageEditProductCreationCommand.java" />
         <option value="$PROJECT_DIR$/src/ua/kozak_vitalii/project_9/commands/UpdateProductInfoAdminCommand.java" />
-        <option value="$PROJECT_DIR$/src/ua/kozak_vitalii/project_9/commands/AuthenticateCommand.java" />
         <option value="$PROJECT_DIR$/src/ua/kozak_vitalii/project_9/commands/UserInfoCommand.java" />
         <option value="$PROJECT_DIR$/src/ua/kozak_vitalii/project_9/commands/UserPasswordChangeCommand.java" />
         <option value="$PROJECT_DIR$/src/ua/kozak_vitalii/project_9/commands/newUserPasswordCommand.java" />
         <option value="$PROJECT_DIR$/src/ua/kozak_vitalii/project_9/service/AdminServiceImpl.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/user_edit_password.jsp" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/client_page.jsp" />
         <option value="$PROJECT_DIR$/src/ua/kozak_vitalii/project_9/commands/IndexJspCommand.java" />
-        <option value="$PROJECT_DIR$/src/ua/kozak_vitalii/project_9/servlets/ShoppingServlet.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/languages.jsp" />
         <option value="$PROJECT_DIR$/src/ua/kozak_vitalii/project_9/filters/LocalizationFilter.java" />
-        <option value="$PROJECT_DIR$/src/ua/kozak_vitalii/project_9/factories/CommandFactory.java" />
         <option value="$PROJECT_DIR$/src/resource/l10n_ru_UA.properties" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/admin_page.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/index.jsp" />
-        <option value="$PROJECT_DIR$/src/resource/l10n.properties" />
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/admin_product_create.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/admin_registration.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/admin_user_update.jsp" />
@@ -246,8 +201,18 @@
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/product.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/product_create_new.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/product_edit.jsp" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/admin_menu.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/Error.jsp" />
+        <option value="$PROJECT_DIR$/src/ua/kozak_vitalii/project_9/servlets/ShoppingServlet.java" />
+        <option value="$PROJECT_DIR$/src/resource/l10n.properties" />
+        <option value="$PROJECT_DIR$/src/ua/kozak_vitalii/project_9/commands/AuthenticateCommand.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/admin_page.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/client_page.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/client_menu.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/admin_menu.jsp" />
+        <option value="$PROJECT_DIR$/src/ua/kozak_vitalii/project_9/factories/CommandFactory.java" />
+        <option value="$PROJECT_DIR$/src/ua/kozak_vitalii/project_9/commands/OrderCreateCommand.java" />
+        <option value="$PROJECT_DIR$/src/ua/kozak_vitalii/project_9/commands/ClientInfoCommand.java" />
       </list>
     </option>
   </component>
@@ -324,13 +289,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="project_9" type="462c0819:PsiDirectoryNode" />
               <item name="commands" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Ua_Kozak_Vitalii_Project_9" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Ua_Kozak_Vitalii_Project_9" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="project_9" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Ua_Kozak_Vitalii_Project_9" type="b2602c69:ProjectViewProjectNode" />
@@ -682,7 +640,7 @@
       <workItem from="1508173984706" duration="2563000" />
       <workItem from="1508176572635" duration="701000" />
       <workItem from="1508177327191" duration="624000" />
-      <workItem from="1508177971268" duration="2673000" />
+      <workItem from="1508177971268" duration="6030000" />
     </task>
     <task id="LOCAL-00001" summary="first">
       <created>1507627311262</created>
@@ -733,11 +691,25 @@
       <option name="project" value="LOCAL" />
       <updated>1507935945406</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="16_10_2017">
+      <created>1508180671945</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1508180671945</updated>
+    </task>
+    <task id="LOCAL-00009" summary="16_10_2017">
+      <created>1508180735954</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1508180735954</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="234967000" />
+    <option name="totallyTimeSpent" value="238324000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
@@ -784,7 +756,8 @@
     <MESSAGE value="first" />
     <MESSAGE value="12_10_2017" />
     <MESSAGE value="13_10_2017" />
-    <option name="LAST_COMMIT_MESSAGE" value="13_10_2017" />
+    <MESSAGE value="16_10_2017" />
+    <option name="LAST_COMMIT_MESSAGE" value="16_10_2017" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -805,27 +778,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/ua/kozak_vitalii/project_9/commands/UpdateCategoryInfoAdminCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-124">
-          <caret line="19" column="11" lean-forward="false" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/kozak_vitalii/project_9/commands/ReturnPageEditCategoryCreationCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="28" column="63" lean-forward="true" selection-start-line="28" selection-start-column="63" selection-end-line="28" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/kozak_vitalii/project_9/domain/Product.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="477">
-          <caret line="74" column="130" lean-forward="true" selection-start-line="74" selection-start-column="130" selection-end-line="74" selection-end-column="130" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ua/kozak_vitalii/project_9/service/AdminService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="327">
@@ -862,13 +814,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/kozak_vitalii/project_9/commands/ProductCreateCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="14" column="11" lean-forward="false" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ua/kozak_vitalii/project_9/commands/UpdateProductInfoAdminCommand.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="370">
@@ -894,13 +839,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="17" column="11" lean-forward="false" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/kozak_vitalii/project_9/commands/CategoryCreateCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -971,14 +909,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/kozak_vitalii/project_9/factories/CommandFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="19" column="22" lean-forward="false" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/resource/l10n_ru_UA.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -990,53 +920,10 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/error404.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/exception.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/resource/l10n.properties">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="5" column="23" lean-forward="false" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="ResourceBundle">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/Error.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="3" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/kozak_vitalii/project_9/filters/LocalizationFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="35" column="43" lean-forward="false" selection-start-line="35" selection-start-column="43" selection-end-line="35" selection-end-column="43" />
           <folding />
         </state>
       </provider>
@@ -1153,50 +1040,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/client_page.jsp">
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/Error.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="81" lean-forward="false" selection-start-line="6" selection-start-column="53" selection-end-line="6" selection-end-column="81" />
+        <state relative-caret-position="34">
+          <caret line="2" column="4" lean-forward="true" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/admin_menu.jsp">
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/error404.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="224" lean-forward="false" selection-start-line="9" selection-start-column="224" selection-end-line="9" selection-end-column="224" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/admin_page.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/kozak_vitalii/project_9/servlets/ShoppingServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="61" column="59" lean-forward="false" selection-start-line="61" selection-start-column="59" selection-end-line="61" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/kozak_vitalii/project_9/commands/AuthenticateCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="41" column="16" lean-forward="false" selection-start-line="41" selection-start-column="16" selection-end-line="41" selection-end-column="41" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="13" lean-forward="true" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+        <state relative-caret-position="153">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1209,6 +1072,130 @@
             <element signature="e#285#286#0" expanded="true" />
             <element signature="e#320#321#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ua/kozak_vitalii/project_9/servlets/ShoppingServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="45" column="41" lean-forward="false" selection-start-line="45" selection-start-column="41" selection-end-line="45" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ua/kozak_vitalii/project_9/filters/LocalizationFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="26" column="44" lean-forward="false" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/admin_page.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="35" lean-forward="true" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/admin_menu.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="19" lean-forward="true" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/client_page.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="46" lean-forward="true" selection-start-line="13" selection-start-column="46" selection-end-line="13" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ua/kozak_vitalii/project_9/commands/AuthenticateCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="42" column="13" lean-forward="true" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
+          <folding>
+            <element signature="e#560#561#0" expanded="true" />
+            <element signature="e#608#609#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ua/kozak_vitalii/project_9/commands/CategoryCreateCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="16" column="11" lean-forward="false" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
+          <folding>
+            <element signature="e#588#589#0" expanded="true" />
+            <element signature="e#636#637#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ua/kozak_vitalii/project_9/commands/ProductCreateCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="14" column="11" lean-forward="false" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
+          <folding>
+            <element signature="e#489#490#0" expanded="true" />
+            <element signature="e#537#538#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ua/kozak_vitalii/project_9/commands/OrderCreateCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="20" column="40" lean-forward="false" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ua/kozak_vitalii/project_9/factories/CommandFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="50" column="49" lean-forward="false" selection-start-line="50" selection-start-column="49" selection-end-line="50" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ua/kozak_vitalii/project_9/commands/ClientInfoCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="15" column="39" lean-forward="false" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/resource/l10n.properties">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="23" lean-forward="false" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="ResourceBundle">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/client_menu.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="21" lean-forward="true" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>

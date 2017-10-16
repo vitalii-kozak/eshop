@@ -41,7 +41,7 @@ public class AuthenticateCommand extends Command{
             if (user.getUserType() == UserType.ADMIN) {
                 return "/admin_page.jsp";
             }
-            return "/index.jsp";
+            return "/client_page.jsp";
         }
     }
 }

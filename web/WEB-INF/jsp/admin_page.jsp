@@ -1,12 +1,12 @@
-<%@ page contentType="text/html;charset=UTF-8" pageEncoding="UTF-8" language="java" %>
-<%--<%@ page contentType="text/html;charset=UTF-8" pageEncoding="UTF-8" language="java" errorPage="exception.jsp" %>--%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-
+<%@ page contentType="text/html;charset=UTF-8" pageEncoding="UTF-8" language="java" errorPage="exception.jsp" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<c:setLocale value="${sessionScope.locale}" scope="session" />
+<c:bundle basename="resource.l10n" >
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/menu.css"/>
 <html>
 <jsp:include page="languages.jsp"/> <br>
 
 <head>
-    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/menu.css"/>
     <h2> &nbsp;&nbsp; Registration</h2>
 </head>
 <body>
@@ -18,7 +18,7 @@
 
 <table>
     <tr>
-        <td><b>Login: </b></td><td>${user.name}<br/></td>
+        <td><b>Login: </b></td><td>${user.login}<br/></td>
     </tr>
     <tr>
         <td><b>Name: </b></td><td>${user.name}<br/></td>
@@ -37,3 +37,4 @@
 </table>
 </body>
 </html>
+</c:bundle>
