@@ -30,6 +30,11 @@ public class AuthenticateCommand extends Command{
         if (user == null) {
             request.setAttribute("error", "No user with such data found. Wrong login or password!");
             return "/index.jsp";
+
+        }else if (user.getIsBlocked()) {
+            request.setAttribute("error", "Warning! User is banned!");
+            return "/index.jsp";
+
         } else {
             request.getSession().setAttribute("user", user);
             request.setAttribute("message", user.getName());

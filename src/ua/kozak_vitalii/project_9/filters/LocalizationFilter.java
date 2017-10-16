@@ -14,13 +14,9 @@ import java.util.Set;
 public class LocalizationFilter implements Filter {
 
     private static final Logger logger = Logger.getLogger(LocalizationFilter.class);
-    private static final ResourceBundle bundle = ResourceBundle.getBundle("resource.requestURI");
-    private Set<String> urlPatterns;
 
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {
-        urlPatterns = new HashSet<>();
-        urlPatterns.add(bundle.getString("localization"));
     }
 
     /**
@@ -33,29 +29,20 @@ public class LocalizationFilter implements Filter {
     @Override
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain filterChain) throws IOException, ServletException {
         HttpServletRequest req = (HttpServletRequest) request;
-        String path = req.getPathInfo();
-        logger.debug(path);
-        if (urlPatterns.contains(path)) {
-            logger.debug("doFilter: " + path);
+
+        String lang = request.getParameter("lang");
+
+        logger.debug(lang);
+        if (lang != null && !lang.isEmpty()) {
             HttpSession session = req.getSession(true);
-            String lang = req.getParameter("lang");
             logger.debug("lang = " + lang);
             if (lang.equals("rus")) {
                 session.setAttribute("locale", new Locale("ru", "UA"));
             }else {
                 session.setAttribute("locale", new Locale("en", "US"));
             }
-            String commandName = req.getParameter("command_name");
-            logger.debug("commandName = " + commandName);
-            if (commandName.equals(bundle.getString("course_information"))) {
-                commandName = bundle.getString("courses");
-            } else if (commandName.equals(bundle.getString("authenticate"))) {
-                commandName = bundle.getString("index");
-            }
-            request.getRequestDispatcher("/" + commandName).forward(request, response);
-        } else {
-            filterChain.doFilter(req, response);
         }
+        filterChain.doFilter(req, response);
     }
 
     @Override

@@ -68,7 +68,7 @@ public class AdminServiceImpl implements AdminService {
     @Override
     public boolean changePassword(User user, String oldPassword, String newPassword, String passwordConfirmation)  throws WrongUserDataException {
         if (!user.getPassword().equals(oldPassword)) {
-            throw new WrongUserDataException("Wrong password");
+            throw new WrongUserDataException("Wrong old password");
         }
         checkPassword(newPassword, passwordConfirmation);
         user.setPassword(newPassword);

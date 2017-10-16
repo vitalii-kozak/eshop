@@ -11,17 +11,29 @@
 </head>
 <body>
 
-<ul id="main-menu">
-    <li> &nbsp; </li>
-    <li><input type="hidden" name="action" value="INFO"> <input class="myButtonMenu" type="submit" value="Info"></li><li> &nbsp; </li>
-    <li><form name="client registration" action="ShoppingServlet" method="post"><input type="hidden" name="action" value="CLIENT_REGISTRATION"> <input class="myButtonMenu" type="submit" value="Create User"></form></li><li> &nbsp; </li>
-    <li><form name="update user" action="ShoppingServlet" method="post"><input type="hidden" name="action" value="UPDATE_USER"> <input class="myButtonMenu" type="submit" value="Update User"></form></li><li> &nbsp; </li>
-    <li><form name="update user" action="ShoppingServlet" method="post"><input type="hidden" name="action" value="CATEGORY_CREATE_MENU"> <input class="myButtonMenu" type="submit" value="Category"></form></li><li> &nbsp; </li>
-    <li><form name="update user" action="ShoppingServlet" method="post"><input type="hidden" name="action" value="PRODUCT_CREATE_MENU"> <input class="myButtonMenu" type="submit" value="Product"></form></li><li> &nbsp; </li>
-    <li><form name="logout" action="ShoppingServlet" method="post"><input type="hidden" name="action" value="LOGOUT"> <input class="myButtonMenu" type="submit" value="Logout"></form></li><li> &nbsp; </li>
-</ul>
+<jsp:include page="admin_menu.jsp"/> <br>
 
 <span>${message}</span>
 <span class="error">${error}</span>
+
+<table>
+    <tr>
+        <td><b>Login: </b></td><td>${user.name}<br/></td>
+    </tr>
+    <tr>
+        <td><b>Name: </b></td><td>${user.name}<br/></td>
+    </tr>
+    <tr>
+        <td><b>Surname: </b></td><td>${user.surname}<br/></td>
+    </tr>
+    <tr>
+        <td><b>Ban status: </b></td><td>${user.isBlocked ?  "Access is banned" : "Access is allowed"}<br/></td>
+    </tr>
+    <tr>
+        <form name="change_password" action="ShoppingServlet" method="post">
+            <td><input type="hidden" name="action" value="UPDATE_USER_PASSWORD"> <input type="submit" class="myButton" value="Change password"/></td>
+        </form>
+    </tr>
+</table>
 </body>
 </html>

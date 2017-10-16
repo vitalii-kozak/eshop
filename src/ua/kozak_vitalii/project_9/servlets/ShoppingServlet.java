@@ -60,9 +60,11 @@ public class ShoppingServlet extends HttpServlet {
         } else {
 
             String action = request.getParameter("action");
-
+            logger.debug("Action: " + action);
             Command command = CommandFactory.getCommand(action);
+            logger.debug("Command: " + command);
             result = command.execute(request, response);
+            request.setAttribute("action", action);
 
             if (result == null) {
                 // error404 page non found
