@@ -13,12 +13,20 @@ public class JdbcDaoFactory extends DaoFactory {
 
     private static final Logger logger = Logger.getLogger(JdbcDaoFactory.class);
     private static JdbcDaoFactory instance;
-    private DataSource datasource;
+    private UserDao userDao;
+    private ProductDao productDao;
+    private OrderDao orderDao;
+    private CategoryDao categoryDao;
 
     private JdbcDaoFactory() {
         try {
             Context context = (Context) new InitialContext().lookup("java:comp/env");
-            datasource = (DataSource) context.lookup("jdbc/MySQLDataSource");
+            DataSource datasource = (DataSource) context.lookup("jdbc/MySQLDataSource");
+            userDao = new UserDaoImpl(datasource);
+            productDao = new ProductDaoImpl(datasource);
+            categoryDao = new CategoryDaoImpl(datasource);
+            orderDao = new OrderDaoImpl(datasource);
+
         } catch (NamingException e) {
             logger.error("Failed to initialize context: " + e.getMessage());
         }
@@ -35,21 +43,21 @@ public class JdbcDaoFactory extends DaoFactory {
 
     @Override
     public UserDao getUserDao() {
-        return new UserDaoImpl(datasource);
+        return userDao;
     }
 
     @Override
     public ProductDao getProductDao() {
-        return new ProductDaoImpl(datasource);
+        return productDao;
     }
 
     @Override
     public OrderDao getOrderDao() {
-        return new OrderDaoImpl(datasource);
+        return orderDao;
     }
 
     @Override
     public CategoryDao getCategoryDao() {
-        return new CategoryDaoImpl(datasource);
+        return categoryDao;
     }
 }

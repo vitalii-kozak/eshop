@@ -2,11 +2,7 @@ package ua.kozak_vitalii.project_9.servlets;
 
 import org.apache.log4j.Logger;
 import ua.kozak_vitalii.project_9.commands.Command;
-import ua.kozak_vitalii.project_9.enums.DaoType;
-import ua.kozak_vitalii.project_9.enums.ServiceType;
 import ua.kozak_vitalii.project_9.factories.CommandFactory;
-import ua.kozak_vitalii.project_9.factories.DaoFactory;
-import ua.kozak_vitalii.project_9.factories.ServiceFactory;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletContext;
@@ -49,31 +45,28 @@ public class ShoppingServlet extends HttpServlet {
     /**
      * Handles request that came from the client
      * Gets response string and passes it to RequestDispatcher
-     * @param request HttpServletRequest object
+     *
+     * @param request  HttpServletRequest object
      * @param response HttpServletResponse object
      */
     private void handleRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        HttpSession session = request.getSession(false);
+        HttpSession session = request.getSession(true);
         String result;
-        if (session == null) {
-            result = "/Error.jsp";
-        } else {
 
-            String action = request.getParameter("action");
-            logger.debug("Action: " + action);
-            Command command = CommandFactory.getCommand(action);
-            logger.debug("Command: " + command);
-            result = command.execute(request, response);
-            request.setAttribute("action", action);
+        String action = request.getParameter("action");
+        logger.debug("Action: " + action);
+        request.setAttribute("action", action);
+        Command command = CommandFactory.getCommand(action);
 
-            if (result == null) {
-                // error404 page not found
-                result = "/Error.jsp";
-            }
+        if (command == null) {
+            // error404 page not found
+            result = "/error404.jsp";
         }
 
+        logger.debug("Command: " + command);
+        result = command.execute(request, response);
         ServletContext sc = getServletContext();
-        RequestDispatcher rd = sc.getRequestDispatcher("/WEB-INF/jsp"  + result);
+        RequestDispatcher rd = sc.getRequestDispatcher("/WEB-INF/jsp" + result);
         rd.forward(request, response);
     }
 

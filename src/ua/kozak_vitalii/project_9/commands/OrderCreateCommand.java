@@ -21,11 +21,8 @@ public class OrderCreateCommand extends Command {
         logger.debug("OrderCreateCommand()");
 
         List productsList = adminService.getProducts();
-        List categoriesList = adminService.getCategories();
-
-        request.setAttribute("product_categorieslist", categoriesList);
         request.setAttribute("productslist", productsList);
 
-        return "/EShop.jsp";
+        return "/order.jsp";
     }
 }

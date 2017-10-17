@@ -19,9 +19,10 @@ public class CommandFactory {
         commands = new HashMap<>();
         commands.put("", new IndexJspCommand());
 
-        commands.put("ADD", new AddToCartCommand());
-        commands.put("DELETE", new DeleteFromCartCommand());
+        commands.put("ADD", new AddToCartCommand(serviceFactory.getAdminService()));
+        commands.put("DELETE", new DeleteFromCartCommand(serviceFactory.getAdminService()));
         commands.put("CHECKOUT", new CheckOutCommand());
+        commands.put("SEND_ORDER", new SendOrderCommand(serviceFactory.getAdminService()));
 
         commands.put("AUTHENTICATE", new AuthenticateCommand(serviceFactory.getAdminService()));
         commands.put("CLIENT_REGISTRATION", new ClientRegistrationCommand());

@@ -1,8 +1,10 @@
 package ua.kozak_vitalii.project_9.commands;
 
+import org.apache.log4j.Logger;
 import ua.kozak_vitalii.project_9.domain.Category;
 import ua.kozak_vitalii.project_9.domain.Product;
 import ua.kozak_vitalii.project_9.domain.ProductOrder;
+import ua.kozak_vitalii.project_9.service.AdminService;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -13,11 +15,16 @@ import java.util.List;
 import java.util.StringTokenizer;
 
 public class AddToCartCommand extends Command {
+    private static final Logger logger = Logger.getLogger(AdminService.class);
+    private final AdminService adminService;
 
+    public AddToCartCommand(AdminService adminService) {
+        this.adminService = adminService;
+    }
 
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) {
-
+        logger.debug("AddToCartCommand");
         HttpSession session = request.getSession(true);
 
         List buylist= (List) session.getAttribute("shoppingcart");
@@ -41,11 +48,15 @@ public class AddToCartCommand extends Command {
                 buylist.add(newProductOrder);
         }
         session.setAttribute("shoppingcart", buylist);
-        return "/EShop.jsp";
+
+        List productsList = adminService.getProducts();
+        request.setAttribute("productslist", productsList);
+        request.setAttribute("buylist", buylist);
+        return "/order.jsp";
     }
 
     private ProductOrder GetProduct(HttpServletRequest request) {
-        String requestProduct = request.getParameter("product");
+        String requestProduct = request.getParameter("order.product_selected");
         String qty = request.getParameter("qty");
         StringTokenizer t = new StringTokenizer(requestProduct,"|");
         String productId = t.nextToken();

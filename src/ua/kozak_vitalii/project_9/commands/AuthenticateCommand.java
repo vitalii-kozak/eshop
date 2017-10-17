@@ -27,6 +27,8 @@ public class AuthenticateCommand extends Command{
             System.out.println(theException);
         }
 
+        request.setAttribute("action", "");
+
         if (user == null) {
             request.setAttribute("error", "No user with such data found. Wrong login or password!");
             return "/index.jsp";
@@ -38,6 +40,7 @@ public class AuthenticateCommand extends Command{
         } else {
             request.getSession().setAttribute("user", user);
             request.setAttribute("message", user.getName());
+            request.setAttribute("action", "USER_INFO");
             if (user.getUserType() == UserType.ADMIN) {
                 return "/admin_page.jsp";
             }

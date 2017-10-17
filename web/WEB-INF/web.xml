@@ -8,6 +8,10 @@
         <servlet-class>ua.kozak_vitalii.project_9.servlets.ShoppingServlet</servlet-class>
     </servlet>
 
+    <session-config>
+        <session-timeout> 120</session-timeout>
+    </session-config>
+
     <context-param>
         <param-name>log4jConfigLocation</param-name>
         <param-value>/WEB-INF/resource/log4j.xml</param-value>
@@ -36,5 +40,18 @@
     <welcome-file-list>
         <welcome-file>/WEB-INF/jsp/index.jsp</welcome-file>
     </welcome-file-list>
+
+    <error-page>
+        <error-code>500</error-code>
+        <location>/WEB-INF/jsp/exception.jsp</location>
+    </error-page>
+    <error-page>
+        <exception-type>javax.servlet.ServletException</exception-type>
+        <location>/WEB-INF/jsp/exception.jsp</location>
+    </error-page>
+    <error-page>
+        <exception-type>java.io.IOException</exception-type>
+        <location>/WEB-INF/jsp/exception.jsp</location>
+    </error-page>
 
 </web-app>

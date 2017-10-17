@@ -25,11 +25,11 @@ public class SimpleServiceFactory extends ServiceFactory {
 
     @Override
     public AdminService getAdminService() {
-        return new AdminServiceImpl(daoFactory.getUserDao(), daoFactory.getProductDao(), daoFactory.getCategoryDao());
+        return new AdminServiceImpl(daoFactory.getUserDao(), daoFactory.getProductDao(), daoFactory.getCategoryDao(), daoFactory.getOrderDao());
     }
 
     @Override
-    public ClientService getUserService() {
+    public ClientService getClientService() {
         return null;
     }
 

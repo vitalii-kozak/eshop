@@ -8,7 +8,7 @@ import ua.kozak_vitalii.project_9.service.*;
 public abstract class ServiceFactory {
 
     public abstract AdminService getAdminService();
-    public abstract ClientService getUserService();
+    public abstract ClientService getClientService();
 
     public static ServiceFactory getFactory(@NotNull DaoFactory daoFactory, ServiceType type) {
         if (type == ServiceType.SIMPLE) {

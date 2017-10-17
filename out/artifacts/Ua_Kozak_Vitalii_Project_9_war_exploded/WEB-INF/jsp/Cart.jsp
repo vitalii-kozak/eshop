@@ -1,46 +1,42 @@
-<%@ page session="true" import="java.util.*, ua.kozak_vitalii.project_9.domain.Category, ua.kozak_vitalii.project_9.domain.Product, ua.kozak_vitalii.project_9.domain.ProductOrder" %>
-<%
- List buylist = (List) session.getAttribute("shoppingcart");
- if (buylist != null && (buylist.size() > 0)) {
-%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c" %>
+
+<%--<c: set var = "index"  value = "0"/>--%>
 <center>
- <table border="0" cellpadding="0" width="100%" bgcolor="#FFFFFF">
-  <tr>
-   <td><b>PRODUCT_ID</b></td>
-   <td><b>PRODUCT</b></td>
-   <td><b>CATEGORY</b></td>
-   <td><b>PRICE</b></td>
-   <td><b>QUANTITY</b></td>
-   <td></td>
-  </tr>
-  <%
-   for (int index=0; index < buylist.size();index++) {
-    ProductOrder anOrder = (ProductOrder) buylist.get(index);
-  %>
-  <tr>
-   <td><b><%= anOrder.getProduct().getId() %></b></td>
-   <td><b><%= anOrder.getProduct().getName() %></b></td>
-   <td><b><%= anOrder.getProduct().getCategory().getName() %></b></td>
-   <td><b><%= anOrder.getProduct().getPrice() %></b></td>
-   <td><b><%= anOrder.getProductQuantity() %></b></td>
-   <td>
-    <form name="deleteForm"
+    <table border="0" cellpadding="0" width="100%" bgcolor="#FFFFFF">
+        <tr>
+            <td><b>PRODUCT_ID</b></td>
+            <td><b>PRODUCT</b></td>
+            <td><b>CATEGORY</b></td>
+            <td><b>PRICE</b></td>
+            <td><b>QUANTITY</b></td>
+            <td></td>
+        </tr>
+        <c:forEach var="anOrder" items="${sessionScope.shoppingcart}" varStatus="loop">
+        <tr>
+            <td><b>${anOrder.product.id}</b></td>
+            <td><b>${anOrder.product.name}</b></td>
+            <td><b>${anOrder.product.category.name}</b></td>
+            <td><b>${anOrder.product.price }</b></td>
+            <td><b>${anOrder.productQuantity }</b></td>
+            <td>
+                <form name="deleteForm"
+                      action="ShoppingServlet"
+                      method="POST">
+                    <input type="submit" value="Delete">
+                    <input type="hidden" name= "delindex" value="${loop.index}">
+                    <input type="hidden" name="action" value="DELETE">
+                </form>
+            </td>
+        </tr>
+            <%--<c:set var="index" value="${index} + 1"/>--%>
+        </c:forEach>
+    </table>
+    <p>
+    <form name="checkoutForm"
           action="ShoppingServlet"
           method="POST">
-     <input type="submit" value="Delete">
-     <input type="hidden" name= "delindex" value='<%= index %>'>
-     <input type="hidden" name="action" value="DELETE">
+        <input type="hidden" name="action" value="CHECKOUT">
+        <input type="submit" name="Checkout" value="Checkout">
     </form>
-   </td>
-  </tr>
-  <% } %>
- </table>
- <p>
- <form name="checkoutForm"
-       action="ShoppingServlet"
-       method="POST">
-  <input type="hidden" name="action" value="CHECKOUT">
-  <input type="submit" name="Checkout" value="Checkout">
- </form>
 </center>
-<% } %>

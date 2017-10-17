@@ -154,4 +154,14 @@ public interface AdminService {
      * @throws WrongProductDataException in case category name is empty
      */
     boolean updateCategory(Category category) throws WrongCategoryDataException;
+
+    /**
+     *  Creates a new record of Order object with given parameters.
+     *  @throws WrongOrderDataException in case some order data is wrong
+     *  @param productOrder list of producs
+     *  @param user user
+     *  @param totalPrice total price of order
+     *  @return <code><b>true</b></code> if operation's successful, otherwise - <code><b>false</b></code>
+     */
+    public boolean addNewOrder(List productOrder, User user, BigDecimal totalPrice) throws WrongOrderDataException;
 }

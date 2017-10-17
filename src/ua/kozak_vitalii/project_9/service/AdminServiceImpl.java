@@ -2,16 +2,16 @@ package ua.kozak_vitalii.project_9.service;
 
 import com.sun.istack.internal.NotNull;
 import ua.kozak_vitalii.project_9.dao.CategoryDao;
+import ua.kozak_vitalii.project_9.dao.OrderDao;
 import ua.kozak_vitalii.project_9.dao.ProductDao;
 import ua.kozak_vitalii.project_9.dao.UserDao;
-import ua.kozak_vitalii.project_9.domain.Category;
-import ua.kozak_vitalii.project_9.domain.Client;
-import ua.kozak_vitalii.project_9.domain.Product;
-import ua.kozak_vitalii.project_9.domain.User;
+import ua.kozak_vitalii.project_9.domain.*;
 import ua.kozak_vitalii.project_9.enums.UserType;
 import ua.kozak_vitalii.project_9.exceptions.*;
 
 import java.math.BigDecimal;
+import java.sql.Timestamp;
+import java.util.Date;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -21,11 +21,13 @@ public class AdminServiceImpl implements AdminService {
     private UserDao userDao;
     private ProductDao productDao;
     private CategoryDao categoryDao;
+    private OrderDao orderDao;
 
-    public AdminServiceImpl(@NotNull UserDao userDao, @NotNull ProductDao productDao, @NotNull CategoryDao categoryDao) {
+    public AdminServiceImpl(@NotNull UserDao userDao, @NotNull ProductDao productDao, @NotNull CategoryDao categoryDao, @NotNull OrderDao orderDao) {
         this.userDao = userDao;
         this.productDao = productDao;
         this.categoryDao = categoryDao;
+        this.orderDao = orderDao;
     }
 
     @Override
@@ -235,5 +237,15 @@ public class AdminServiceImpl implements AdminService {
         } else {
             return categoryDao.update(category);
         }
+    }
+
+    @Override
+    public boolean addNewOrder(List productOrder, User user, BigDecimal totalPrice) throws WrongOrderDataException {
+        if (productOrder.isEmpty()) {
+            throw new WrongOrderDataException("List is empty!");
+        }
+        Order order = new Order(productOrder, user, new Timestamp(new Date().getTime()), false , totalPrice);
+
+        return orderDao.create(order) != null;
     }
 }
