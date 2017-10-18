@@ -20,14 +20,14 @@
         <table width="100%">
             <tr>
                 <td><b>ORDER</b></td>
-                <td><b>PAID</b></td>
+                <td align="center"><b>PAID</b></td>
                 <td><b></b></td>
-                <td><b>DELETE</b></td>
+                <td align="center"><b>DELETE</b></td>
             </tr>
             <c:forEach var="order" items="${sessionScope.orderslist}" varStatus="loop">
                 <tr>
                     <td valign="center">${order.presentation}</td>
-                    <td>
+                    <td align="center">
                         <form name="deleteOrder" action="ShoppingServlet" method="POST">
                             <input type="submit" value="Paid">
                             <input type="hidden" name="paidindex" value="${loop.index}">
@@ -35,7 +35,7 @@
                         </form>
                     </td>
                     <td> &nbsp; </td>
-                    <td>
+                    <td align="center">
                         <form name="payOrder" action="ShoppingServlet" method="POST">
                             <input type="submit" value="Delete">
                             <input type="hidden" name="delindex" value="${loop.index}">

@@ -7,60 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d93d0d2b-a17e-492d-b5e0-268fb9654392" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ua/kozak_vitalii/project_9/commands/DeleteOrderAdminCommand.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ua/kozak_vitalii/project_9/commands/OrderCreateAdminCommand.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ua/kozak_vitalii/project_9/commands/SetPaidOrderAdminCommand.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/admin_orders.jsp" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Ua_Kozak_Vitalii_Project_9_war_exploded/WEB-INF/jsp/EShop.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Ua_Kozak_Vitalii_Project_9/ua/kozak_vitalii/project_9/factories/CommandFactory.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Ua_Kozak_Vitalii_Project_9/ua/kozak_vitalii/project_9/service/AdminService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Ua_Kozak_Vitalii_Project_9/ua/kozak_vitalii/project_9/service/AdminServiceImpl.class" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ua/kozak_vitalii/project_9/commands/OrderCreateCommand.java" afterPath="$PROJECT_DIR$/src/ua/kozak_vitalii/project_9/commands/OrderCreateClientCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Ua_Kozak_Vitalii_Project_9_war_exploded/WEB-INF/classes/ua/kozak_vitalii/project_9/commands/AddToCartCommand.class" afterPath="$PROJECT_DIR$/out/artifacts/Ua_Kozak_Vitalii_Project_9_war_exploded/WEB-INF/classes/ua/kozak_vitalii/project_9/commands/AddToCartCommand.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Ua_Kozak_Vitalii_Project_9_war_exploded/WEB-INF/classes/ua/kozak_vitalii/project_9/commands/DeleteFromCartCommand.class" afterPath="$PROJECT_DIR$/out/artifacts/Ua_Kozak_Vitalii_Project_9_war_exploded/WEB-INF/classes/ua/kozak_vitalii/project_9/commands/DeleteFromCartCommand.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Ua_Kozak_Vitalii_Project_9_war_exploded/WEB-INF/classes/ua/kozak_vitalii/project_9/dao/OrderDaoImpl.class" afterPath="$PROJECT_DIR$/out/artifacts/Ua_Kozak_Vitalii_Project_9_war_exploded/WEB-INF/classes/ua/kozak_vitalii/project_9/dao/OrderDaoImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Ua_Kozak_Vitalii_Project_9_war_exploded/WEB-INF/classes/ua/kozak_vitalii/project_9/domain/Admin.class" afterPath="$PROJECT_DIR$/out/artifacts/Ua_Kozak_Vitalii_Project_9_war_exploded/WEB-INF/classes/ua/kozak_vitalii/project_9/domain/Admin.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Ua_Kozak_Vitalii_Project_9_war_exploded/WEB-INF/classes/ua/kozak_vitalii/project_9/domain/Client.class" afterPath="$PROJECT_DIR$/out/artifacts/Ua_Kozak_Vitalii_Project_9_war_exploded/WEB-INF/classes/ua/kozak_vitalii/project_9/domain/Client.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Ua_Kozak_Vitalii_Project_9_war_exploded/WEB-INF/classes/ua/kozak_vitalii/project_9/domain/Order.class" afterPath="$PROJECT_DIR$/out/artifacts/Ua_Kozak_Vitalii_Project_9_war_exploded/WEB-INF/classes/ua/kozak_vitalii/project_9/domain/Order.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Ua_Kozak_Vitalii_Project_9_war_exploded/WEB-INF/classes/ua/kozak_vitalii/project_9/factories/CommandFactory.class" afterPath="$PROJECT_DIR$/out/artifacts/Ua_Kozak_Vitalii_Project_9_war_exploded/WEB-INF/classes/ua/kozak_vitalii/project_9/factories/CommandFactory.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Ua_Kozak_Vitalii_Project_9_war_exploded/WEB-INF/classes/ua/kozak_vitalii/project_9/factories/JdbcDaoFactory.class" afterPath="$PROJECT_DIR$/out/artifacts/Ua_Kozak_Vitalii_Project_9_war_exploded/WEB-INF/classes/ua/kozak_vitalii/project_9/factories/JdbcDaoFactory.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Ua_Kozak_Vitalii_Project_9_war_exploded/WEB-INF/classes/ua/kozak_vitalii/project_9/factories/SimpleServiceFactory.class" afterPath="$PROJECT_DIR$/out/artifacts/Ua_Kozak_Vitalii_Project_9_war_exploded/WEB-INF/classes/ua/kozak_vitalii/project_9/factories/SimpleServiceFactory.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Ua_Kozak_Vitalii_Project_9_war_exploded/WEB-INF/classes/ua/kozak_vitalii/project_9/service/AdminService.class" afterPath="$PROJECT_DIR$/out/artifacts/Ua_Kozak_Vitalii_Project_9_war_exploded/WEB-INF/classes/ua/kozak_vitalii/project_9/service/AdminService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Ua_Kozak_Vitalii_Project_9_war_exploded/WEB-INF/classes/ua/kozak_vitalii/project_9/service/AdminServiceImpl.class" afterPath="$PROJECT_DIR$/out/artifacts/Ua_Kozak_Vitalii_Project_9_war_exploded/WEB-INF/classes/ua/kozak_vitalii/project_9/service/AdminServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Ua_Kozak_Vitalii_Project_9/ua/kozak_vitalii/project_9/commands/AddToCartCommand.class" afterPath="$PROJECT_DIR$/out/production/Ua_Kozak_Vitalii_Project_9/ua/kozak_vitalii/project_9/commands/AddToCartCommand.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Ua_Kozak_Vitalii_Project_9/ua/kozak_vitalii/project_9/commands/DeleteFromCartCommand.class" afterPath="$PROJECT_DIR$/out/production/Ua_Kozak_Vitalii_Project_9/ua/kozak_vitalii/project_9/commands/DeleteFromCartCommand.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Ua_Kozak_Vitalii_Project_9/ua/kozak_vitalii/project_9/dao/OrderDaoImpl.class" afterPath="$PROJECT_DIR$/out/production/Ua_Kozak_Vitalii_Project_9/ua/kozak_vitalii/project_9/dao/OrderDaoImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Ua_Kozak_Vitalii_Project_9/ua/kozak_vitalii/project_9/domain/Admin.class" afterPath="$PROJECT_DIR$/out/production/Ua_Kozak_Vitalii_Project_9/ua/kozak_vitalii/project_9/domain/Admin.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Ua_Kozak_Vitalii_Project_9/ua/kozak_vitalii/project_9/domain/Client.class" afterPath="$PROJECT_DIR$/out/production/Ua_Kozak_Vitalii_Project_9/ua/kozak_vitalii/project_9/domain/Client.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Ua_Kozak_Vitalii_Project_9/ua/kozak_vitalii/project_9/domain/Order.class" afterPath="$PROJECT_DIR$/out/production/Ua_Kozak_Vitalii_Project_9/ua/kozak_vitalii/project_9/domain/Order.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Ua_Kozak_Vitalii_Project_9/ua/kozak_vitalii/project_9/factories/JdbcDaoFactory.class" afterPath="$PROJECT_DIR$/out/production/Ua_Kozak_Vitalii_Project_9/ua/kozak_vitalii/project_9/factories/JdbcDaoFactory.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Ua_Kozak_Vitalii_Project_9/ua/kozak_vitalii/project_9/factories/SimpleServiceFactory.class" afterPath="$PROJECT_DIR$/out/production/Ua_Kozak_Vitalii_Project_9/ua/kozak_vitalii/project_9/factories/SimpleServiceFactory.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Ua_Kozak_Vitalii_Project_9_war_exploded/WEB-INF/jsp/Cart.jsp" afterPath="$PROJECT_DIR$/out/artifacts/Ua_Kozak_Vitalii_Project_9_war_exploded/WEB-INF/jsp/Cart.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Ua_Kozak_Vitalii_Project_9_war_exploded/WEB-INF/jsp/error404.jsp" afterPath="$PROJECT_DIR$/out/artifacts/Ua_Kozak_Vitalii_Project_9_war_exploded/WEB-INF/jsp/error404.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/resource/l10n.properties" afterPath="$PROJECT_DIR$/src/resource/l10n.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/resource/l10n_ru_UA.properties" afterPath="$PROJECT_DIR$/src/resource/l10n_ru_UA.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ua/kozak_vitalii/project_9/commands/AddToCartCommand.java" afterPath="$PROJECT_DIR$/src/ua/kozak_vitalii/project_9/commands/AddToCartCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ua/kozak_vitalii/project_9/commands/DeleteFromCartCommand.java" afterPath="$PROJECT_DIR$/src/ua/kozak_vitalii/project_9/commands/DeleteFromCartCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ua/kozak_vitalii/project_9/commands/SendOrderCommand.java" afterPath="$PROJECT_DIR$/src/ua/kozak_vitalii/project_9/commands/SendOrderCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ua/kozak_vitalii/project_9/dao/OrderDaoImpl.java" afterPath="$PROJECT_DIR$/src/ua/kozak_vitalii/project_9/dao/OrderDaoImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ua/kozak_vitalii/project_9/domain/Admin.java" afterPath="$PROJECT_DIR$/src/ua/kozak_vitalii/project_9/domain/Admin.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ua/kozak_vitalii/project_9/domain/Client.java" afterPath="$PROJECT_DIR$/src/ua/kozak_vitalii/project_9/domain/Client.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ua/kozak_vitalii/project_9/domain/Order.java" afterPath="$PROJECT_DIR$/src/ua/kozak_vitalii/project_9/domain/Order.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ua/kozak_vitalii/project_9/factories/CommandFactory.java" afterPath="$PROJECT_DIR$/src/ua/kozak_vitalii/project_9/factories/CommandFactory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ua/kozak_vitalii/project_9/factories/JdbcDaoFactory.java" afterPath="$PROJECT_DIR$/src/ua/kozak_vitalii/project_9/factories/JdbcDaoFactory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ua/kozak_vitalii/project_9/factories/SimpleServiceFactory.java" afterPath="$PROJECT_DIR$/src/ua/kozak_vitalii/project_9/factories/SimpleServiceFactory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ua/kozak_vitalii/project_9/service/AdminService.java" afterPath="$PROJECT_DIR$/src/ua/kozak_vitalii/project_9/service/AdminService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ua/kozak_vitalii/project_9/service/AdminServiceImpl.java" afterPath="$PROJECT_DIR$/src/ua/kozak_vitalii/project_9/service/AdminServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ua/kozak_vitalii/project_9/service/ClientServiceImpl.java" afterPath="$PROJECT_DIR$/src/ua/kozak_vitalii/project_9/service/ClientServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/Cart.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/Cart.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/admin_menu.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/admin_menu.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/admin_page.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/admin_page.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/admin_product_create.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/admin_product_create.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/category.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/category.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/client_menu.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/client_menu.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/error404.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/error404.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/order.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/order.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/admin_orders.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/admin_orders.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -96,18 +44,18 @@
       <file leaf-file-name="CommandFactory.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ua/kozak_vitalii/project_9/factories/CommandFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
+            <state relative-caret-position="659">
               <caret line="53" column="51" lean-forward="false" selection-start-line="53" selection-start-column="51" selection-end-line="53" selection-end-column="51" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SetPaidOrderAdminCommand.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/ua/kozak_vitalii/project_9/commands/SetPaidOrderAdminCommand.java">
+      <file leaf-file-name="ShoppingServlet.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/ua/kozak_vitalii/project_9/servlets/ShoppingServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="455">
-              <caret line="37" column="74" lean-forward="false" selection-start-line="37" selection-start-column="74" selection-end-line="37" selection-end-column="74" />
+            <state relative-caret-position="604">
+              <caret line="64" column="0" lean-forward="true" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -208,7 +156,6 @@
         <option value="$PROJECT_DIR$/src/ua/kozak_vitalii/project_9/commands/AddToCartCommand.java" />
         <option value="$PROJECT_DIR$/src/ua/kozak_vitalii/project_9/commands/DeleteFromCartCommand.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/Cart.jsp" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/admin_orders.jsp" />
         <option value="$PROJECT_DIR$/src/ua/kozak_vitalii/project_9/commands/OrderCreateAdminCommand.java" />
         <option value="$PROJECT_DIR$/src/ua/kozak_vitalii/project_9/domain/Admin.java" />
         <option value="$PROJECT_DIR$/src/ua/kozak_vitalii/project_9/domain/Client.java" />
@@ -223,6 +170,7 @@
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/category.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/admin_page.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/order.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/admin_orders.jsp" />
       </list>
     </option>
   </component>
@@ -286,99 +234,7 @@
               <item name="Ua_Kozak_Vitalii_Project_9" type="b2602c69:ProjectViewProjectNode" />
               <item name="Ua_Kozak_Vitalii_Project_9" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="resource" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Ua_Kozak_Vitalii_Project_9" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Ua_Kozak_Vitalii_Project_9" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="resource" type="462c0819:PsiDirectoryNode" />
-              <item name="Resource Bundle 'l10n'" type="a6c14932:ResourceBundleNode" />
-            </path>
-            <path>
-              <item name="Ua_Kozak_Vitalii_Project_9" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Ua_Kozak_Vitalii_Project_9" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="project_9" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Ua_Kozak_Vitalii_Project_9" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Ua_Kozak_Vitalii_Project_9" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="project_9" type="462c0819:PsiDirectoryNode" />
-              <item name="commands" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Ua_Kozak_Vitalii_Project_9" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Ua_Kozak_Vitalii_Project_9" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="project_9" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Ua_Kozak_Vitalii_Project_9" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Ua_Kozak_Vitalii_Project_9" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="project_9" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Ua_Kozak_Vitalii_Project_9" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Ua_Kozak_Vitalii_Project_9" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="project_9" type="462c0819:PsiDirectoryNode" />
-              <item name="factories" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Ua_Kozak_Vitalii_Project_9" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Ua_Kozak_Vitalii_Project_9" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="project_9" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Ua_Kozak_Vitalii_Project_9" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Ua_Kozak_Vitalii_Project_9" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="project_9" type="462c0819:PsiDirectoryNode" />
-              <item name="servlets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Ua_Kozak_Vitalii_Project_9" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Ua_Kozak_Vitalii_Project_9" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Ua_Kozak_Vitalii_Project_9" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Ua_Kozak_Vitalii_Project_9" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Ua_Kozak_Vitalii_Project_9" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Ua_Kozak_Vitalii_Project_9" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Ua_Kozak_Vitalii_Project_9" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Ua_Kozak_Vitalii_Project_9" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Ua_Kozak_Vitalii_Project_9" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Ua_Kozak_Vitalii_Project_9" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="jsp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Ua_Kozak_Vitalii_Project_9" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Ua_Kozak_Vitalii_Project_9" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="resource" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -392,7 +248,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/resource/l10n_ru_UA.properties" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
     <property name="settings.editor.selected.configurable" value="File.Encoding" />
     <property name="extract.method.default.visibility" value="private" />
@@ -676,7 +532,7 @@
       <workItem from="1508186103992" duration="381000" />
       <workItem from="1508242128655" duration="33124000" />
       <workItem from="1508304946149" duration="4787000" />
-      <workItem from="1508323622652" duration="2467000" />
+      <workItem from="1508323622652" duration="5094000" />
     </task>
     <task id="LOCAL-00001" summary="first">
       <created>1507627311262</created>
@@ -769,11 +625,18 @@
       <option name="project" value="LOCAL" />
       <updated>1508270703437</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="18_10_2017">
+      <created>1508326119953</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1508326119953</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="280117000" />
+    <option name="totallyTimeSpent" value="282744000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
@@ -788,7 +651,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20633188" sideWeight="0.50238097" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294621" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28107503" sideWeight="0.49761903" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3068309" sideWeight="0.49761903" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -854,7 +717,8 @@
     <MESSAGE value="13_10_2017" />
     <MESSAGE value="16_10_2017" />
     <MESSAGE value="17_10_2017" />
-    <option name="LAST_COMMIT_MESSAGE" value="17_10_2017" />
+    <MESSAGE value="18_10_2017" />
+    <option name="LAST_COMMIT_MESSAGE" value="18_10_2017" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -885,78 +749,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/ua/kozak_vitalii/project_9/commands/LogOutCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/exception.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="8" lean-forward="true" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/kozak_vitalii/project_9/service/ClientServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="20" column="34" lean-forward="true" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/kozak_vitalii/project_9/commands/newUserPasswordCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="19" column="8" lean-forward="false" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="41" />
-          <folding>
-            <element signature="e#743#744#0" expanded="false" />
-            <element signature="e#791#792#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/kozak_vitalii/project_9/factories/ServiceFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="10" column="50" lean-forward="false" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/kozak_vitalii/project_9/commands/CheckOutCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/kozak_vitalii/project_9/commands/SendOrderCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="51" column="16" lean-forward="false" selection-start-line="51" selection-start-column="16" selection-end-line="51" selection-end-column="16" />
-          <folding>
-            <element signature="e#897#898#0" expanded="false" />
-            <element signature="e#947#948#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/kozak_vitalii/project_9/factories/DaoFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="6" column="22" lean-forward="false" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ua/kozak_vitalii/project_9/factories/SimpleServiceFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="426">
@@ -983,16 +775,6 @@
         <state relative-caret-position="194">
           <caret line="22" column="7" lean-forward="true" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/resource/l10n.properties">
-      <provider selected="true" editor-type-id="ResourceBundle">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1152,6 +934,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="26" column="24" lean-forward="false" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1159,6 +942,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="25" column="24" lean-forward="false" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1194,14 +978,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/kozak_vitalii/project_9/factories/CommandFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="53" column="51" lean-forward="false" selection-start-line="53" selection-start-column="51" selection-end-line="53" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ua/kozak_vitalii/project_9/dao/OrderDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -1230,14 +1006,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="546">
           <caret line="73" column="0" lean-forward="false" selection-start-line="73" selection-start-column="0" selection-end-line="75" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/admin_orders.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="32" column="64" lean-forward="false" selection-start-line="32" selection-start-column="55" selection-end-line="32" selection-end-column="64" />
           <folding />
         </state>
       </provider>
@@ -1324,14 +1092,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/order.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="8" column="28" lean-forward="false" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/admin_page.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -1340,10 +1100,286 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/resource/l10n.properties">
+      <provider selected="true" editor-type-id="ResourceBundle">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/order.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="8" column="28" lean-forward="false" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ua/kozak_vitalii/project_9/factories/CommandFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="659">
+          <caret line="53" column="51" lean-forward="false" selection-start-line="53" selection-start-column="51" selection-end-line="53" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/admin_orders.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="33" column="85" lean-forward="false" selection-start-line="33" selection-start-column="85" selection-end-line="33" selection-end-column="85" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/ua/kozak_vitalii/project_9/commands/SetPaidOrderAdminCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="455">
-          <caret line="37" column="74" lean-forward="false" selection-start-line="37" selection-start-column="74" selection-end-line="37" selection-end-column="74" />
+        <state relative-caret-position="557">
+          <caret line="43" column="13" lean-forward="true" selection-start-line="38" selection-start-column="63" selection-end-line="43" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JavaScript-modules-diagram/C:/Users/Tigra/IdeaProjects/Ua_Kozak_Vitalii_Project_9/src/ua/kozak_vitalii/project_9/dao;C:/Users/Tigra/IdeaProjects/Ua_Kozak_Vitalii_Project_9/src/ua/kozak_vitalii/project_9/domain;">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JavaScript-modules-diagram</ID>
+          <OriginalElement>$PROJECT_DIR$/src/ua/kozak_vitalii/project_9/dao;C:/Users/Tigra/IdeaProjects/Ua_Kozak_Vitalii_Project_9/src/ua/kozak_vitalii/project_9/domain;</OriginalElement>
+          <nodes />
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="645.5" y="294.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>All</Category>
+          </Categories>
+          <VISIBILITY>Details</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/ua.kozak_vitalii.project_9.domain.Admin">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>ua.kozak_vitalii.project_9.domain.Admin</OriginalElement>
+          <nodes>
+            <node x="" y="">ua.kozak_vitalii.project_9.domain.ProductOrder</node>
+            <node x="" y="">ua.kozak_vitalii.project_9.domain.Admin</node>
+            <node x="" y="">ua.kozak_vitalii.project_9.dao.OrderDao</node>
+            <node x="" y="">ua.kozak_vitalii.project_9.dao.CategoryDaoImpl</node>
+            <node x="" y="">java.io.Serializable</node>
+            <node x="" y="">ua.kozak_vitalii.project_9.domain.Order</node>
+            <node x="" y="">ua.kozak_vitalii.project_9.dao.ProductDaoImpl</node>
+            <node x="" y="">ua.kozak_vitalii.project_9.dao.CategoryDao</node>
+            <node x="" y="">ua.kozak_vitalii.project_9.dao.UserDaoImpl</node>
+            <node x="" y="">ua.kozak_vitalii.project_9.dao.OrderDaoImpl</node>
+            <node x="" y="">ua.kozak_vitalii.project_9.domain.Product</node>
+            <node x="" y="">ua.kozak_vitalii.project_9.dao.ProductDao</node>
+            <node x="" y="">ua.kozak_vitalii.project_9.domain.Category</node>
+            <node x="" y="">ua.kozak_vitalii.project_9.dao.UserDao</node>
+            <node x="" y="">ua.kozak_vitalii.project_9.domain.User</node>
+            <node x="" y="">ua.kozak_vitalii.project_9.domain.Client</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="235.0" y="247.5" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JavaScript-modules-diagram/C:/Users/Tigra/IdeaProjects/Ua_Kozak_Vitalii_Project_9">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JavaScript-modules-diagram</ID>
+          <OriginalElement>$PROJECT_DIR$</OriginalElement>
+          <nodes />
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="645.5" y="294.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>All</Category>
+          </Categories>
+          <VISIBILITY>Details</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://MODULES/mdl-Ua_Kozak_Vitalii_Project_9">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>MODULES</ID>
+          <OriginalElement>mdl-Ua_Kozak_Vitalii_Project_9</OriginalElement>
+          <nodes>
+            <node x="" y="">mdl-Ua_Kozak_Vitalii_Project_9</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="110.5" y="15.0" />
+          <SelectedNodes />
+          <Categories />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/ua.kozak_vitalii.project_9.dao">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>ua.kozak_vitalii.project_9.dao</OriginalElement>
+          <nodes>
+            <node x="" y="">ua.kozak_vitalii.project_9.commands.OrderCreateAdminCommand</node>
+            <node x="" y="">ua.kozak_vitalii.project_9.factories.SimpleServiceFactory</node>
+            <node x="" y="">ua.kozak_vitalii.project_9.commands.ClientInfoCommand</node>
+            <node x="" y="">ua.kozak_vitalii.project_9.commands.Command</node>
+            <node x="" y="">ua.kozak_vitalii.project_9.commands.ReturnPageEditCategoryCreationCommand</node>
+            <node x="" y="">ua.kozak_vitalii.project_9.filters.LocalizationFilter</node>
+            <node x="" y="">ua.kozak_vitalii.project_9.commands.ReturnPageProductCreationCommand</node>
+            <node x="" y="">ua.kozak_vitalii.project_9.commands.LogOutCommand</node>
+            <node x="" y="">ua.kozak_vitalii.project_9.commands.UpdateProductInfoAdminCommand</node>
+            <node x="" y="">ua.kozak_vitalii.project_9.factories.ServiceFactory</node>
+            <node x="" y="">ua.kozak_vitalii.project_9.commands.AddNewUserAdminCommand</node>
+            <node x="" y="">ua.kozak_vitalii.project_9.dao.CategoryDaoImpl</node>
+            <node x="" y="">ua.kozak_vitalii.project_9.factories.DaoFactory</node>
+            <node x="" y="">ua.kozak_vitalii.project_9.commands.DeleteOrderAdminCommand</node>
+            <node x="" y="">ua.kozak_vitalii.project_9.commands.IndexJspCommand</node>
+            <node x="" y="">ua.kozak_vitalii.project_9.commands.OrderCreateClientCommand</node>
+            <node x="" y="">ua.kozak_vitalii.project_9.dao.ProductDaoImpl</node>
+            <node x="" y="">ua.kozak_vitalii.project_9.commands.AddNewCategoryCommand</node>
+            <node x="" y="">ua.kozak_vitalii.project_9.commands.AuthenticateCommand</node>
+            <node x="" y="">ua.kozak_vitalii.project_9.commands.ProductCreateCommand</node>
+            <node x="" y="">ua.kozak_vitalii.project_9.dao.UserDaoImpl</node>
+            <node x="" y="">ua.kozak_vitalii.project_9.dao.OrderDaoImpl</node>
+            <node x="" y="">ua.kozak_vitalii.project_9.dao.UserDao</node>
+            <node x="" y="">ua.kozak_vitalii.project_9.domain</node>
+            <node x="" y="">ua.kozak_vitalii.project_9.factories.CommandFactory</node>
+            <node x="" y="">ua.kozak_vitalii.project_9.commands.UpdateUserInfoAdminCommand</node>
+            <node x="" y="">ua.kozak_vitalii.project_9.factories.JdbcDaoFactory</node>
+            <node x="" y="">ua.kozak_vitalii.project_9.commands.SetPaidOrderAdminCommand</node>
+            <node x="" y="">ua.kozak_vitalii.project_9.commands.SendOrderCommand</node>
+            <node x="" y="">ua.kozak_vitalii.project_9.commands.CategoryCreateCommand</node>
+            <node x="" y="">ua.kozak_vitalii.project_9.commands.AddNewUserCommand</node>
+            <node x="" y="">ua.kozak_vitalii.project_9.commands.UserInfoCommand</node>
+            <node x="" y="">ua.kozak_vitalii.project_9.dao.OrderDao</node>
+            <node x="" y="">ua.kozak_vitalii.project_9.commands.ReturnPageEditProductCreationCommand</node>
+            <node x="" y="">ua.kozak_vitalii.project_9.dao.CategoryDao</node>
+            <node x="" y="">ua.kozak_vitalii.project_9.commands.UpdateCategoryInfoAdminCommand</node>
+            <node x="" y="">ua.kozak_vitalii.project_9.commands.UserPasswordChangeCommand</node>
+            <node x="" y="">ua.kozak_vitalii.project_9.commands.newUserPasswordCommand</node>
+            <node x="" y="">ua.kozak_vitalii.project_9.commands.MenuUpdateUserAdminCommand</node>
+            <node x="" y="">ua.kozak_vitalii.project_9.commands.CheckOutCommand</node>
+            <node x="" y="">ua.kozak_vitalii.project_9.commands.ReturnPageCategoryCreationCommand</node>
+            <node x="" y="">ua.kozak_vitalii.project_9.commands.SelectUserAdminCommand</node>
+            <node x="" y="">ua.kozak_vitalii.project_9.commands.DeleteFromCartCommand</node>
+            <node x="" y="">ua.kozak_vitalii.project_9.dao.ProductDao</node>
+            <node x="" y="">ua.kozak_vitalii.project_9.commands.ClientRegistrationCommand</node>
+            <node x="" y="">ua.kozak_vitalii.project_9.commands.AddNewProductCommand</node>
+            <node x="" y="">ua.kozak_vitalii.project_9.commands.AddToCartCommand</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.7000000000000001" x="902.1428571428571" y="265.4285714285714" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/ua.kozak_vitalii.project_9.factories.CommandFactory">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>ua.kozak_vitalii.project_9.factories.CommandFactory</OriginalElement>
+          <nodes>
+            <node x="" y="">ua.kozak_vitalii.project_9.factories.JdbcDaoFactory</node>
+            <node x="" y="">ua.kozak_vitalii.project_9.factories.SimpleServiceFactory</node>
+            <node x="" y="">ua.kozak_vitalii.project_9.exceptions.RegistrationException</node>
+            <node x="" y="">ua.kozak_vitalii.project_9.exceptions.WrongProductDataException</node>
+            <node x="" y="">ua.kozak_vitalii.project_9.exceptions.WrongUserDataException</node>
+            <node x="" y="">ua.kozak_vitalii.project_9.factories.CommandFactory</node>
+            <node x="" y="">ua.kozak_vitalii.project_9.factories.ServiceFactory</node>
+            <node x="" y="">ua.kozak_vitalii.project_9.exceptions.AuthenticationException</node>
+            <node x="" y="">ua.kozak_vitalii.project_9.exceptions.WrongOrderDataException</node>
+            <node x="" y="">ua.kozak_vitalii.project_9.exceptions.WrongCategoryDataException</node>
+            <node x="" y="">ua.kozak_vitalii.project_9.factories.DaoFactory</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="162.5" y="252.5" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Fields</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/ua.kozak_vitalii.project_9">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>ua.kozak_vitalii.project_9</OriginalElement>
+          <nodes>
+            <node x="" y="">ua.kozak_vitalii.project_9.factories.SimpleServiceFactory</node>
+            <node x="" y="">ua.kozak_vitalii.project_9.filters.LocalizationFilter</node>
+            <node x="" y="">ua.kozak_vitalii.project_9.enums.UserType</node>
+            <node x="" y="">ua.kozak_vitalii.project_9.factories.ServiceFactory</node>
+            <node x="" y="">ua.kozak_vitalii.project_9.dao.CategoryDaoImpl</node>
+            <node x="" y="">ua.kozak_vitalii.project_9.dao.ProductDaoImpl</node>
+            <node x="" y="">ua.kozak_vitalii.project_9.dao.UserDaoImpl</node>
+            <node x="" y="">ua.kozak_vitalii.project_9.dao.OrderDaoImpl</node>
+            <node x="" y="">ua.kozak_vitalii.project_9.Main</node>
+            <node x="" y="">ua.kozak_vitalii.project_9.domain.User</node>
+            <node x="" y="">ua.kozak_vitalii.project_9.service.AdminService</node>
+            <node x="" y="">ua.kozak_vitalii.project_9.enums.ServiceType</node>
+            <node x="" y="">ua.kozak_vitalii.project_9.service.ClientService</node>
+            <node x="" y="">ua.kozak_vitalii.project_9.dao.CategoryDao</node>
+            <node x="" y="">ua.kozak_vitalii.project_9.domain.Order</node>
+            <node x="" y="">ua.kozak_vitalii.project_9.dao.ProductDao</node>
+            <node x="" y="">ua.kozak_vitalii.project_9.exceptions.AuthenticationException</node>
+            <node x="" y="">ua.kozak_vitalii.project_9.exceptions.WrongOrderDataException</node>
+            <node x="" y="">ua.kozak_vitalii.project_9.exceptions.WrongCategoryDataException</node>
+            <node x="" y="">ua.kozak_vitalii.project_9.exceptions.RegistrationException</node>
+            <node x="" y="">ua.kozak_vitalii.project_9.service.ClientServiceImpl</node>
+            <node x="" y="">ua.kozak_vitalii.project_9.service.AdminServiceImpl</node>
+            <node x="" y="">ua.kozak_vitalii.project_9.factories.DaoFactory</node>
+            <node x="" y="">ua.kozak_vitalii.project_9.domain.Product</node>
+            <node x="" y="">ua.kozak_vitalii.project_9.dao.UserDao</node>
+            <node x="" y="">ua.kozak_vitalii.project_9.factories.CommandFactory</node>
+            <node x="" y="">ua.kozak_vitalii.project_9.servlets.ShoppingServlet</node>
+            <node x="" y="">ua.kozak_vitalii.project_9.factories.JdbcDaoFactory</node>
+            <node x="" y="">ua.kozak_vitalii.project_9.domain.ProductOrder</node>
+            <node x="" y="">ua.kozak_vitalii.project_9.domain.Admin</node>
+            <node x="" y="">ua.kozak_vitalii.project_9.dao.OrderDao</node>
+            <node x="" y="">ua.kozak_vitalii.project_9.exceptions.WrongUserDataException</node>
+            <node x="" y="">ua.kozak_vitalii.project_9.commands</node>
+            <node x="" y="">ua.kozak_vitalii.project_9.domain.Category</node>
+            <node x="" y="">ua.kozak_vitalii.project_9.exceptions.WrongProductDataException</node>
+            <node x="" y="">ua.kozak_vitalii.project_9.enums.DaoType</node>
+            <node x="" y="">ua.kozak_vitalii.project_9.domain.Client</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.7000000000000001" x="687.1428571428571" y="572.2857142857142" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Fields</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ua/kozak_vitalii/project_9/servlets/ShoppingServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="604">
+          <caret line="64" column="0" lean-forward="true" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
           <folding />
         </state>
       </provider>
