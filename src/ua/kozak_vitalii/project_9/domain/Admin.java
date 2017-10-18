@@ -9,8 +9,8 @@ public class Admin extends User {
         super(login, password, name, surname, isBlocked);
     }
 
-    public Admin(@NotNull String email, @NotNull String password, @NotNull String name, @NotNull String surname) {
-        super(email, password, name, surname);
+    public Admin(@NotNull String login, @NotNull String password, @NotNull String name, @NotNull String surname) {
+        super(login, password, name, surname);
     }
 
     @Override
@@ -23,7 +23,7 @@ public class Admin extends User {
         String isBlockedText =  getIsBlocked() ?  "Denied" : "Allowed";
         return "Admin{" +
                 "id=" + getId() +
-                ", email='" + getLogin() + '\'' +
+                ", login='" + getLogin() + '\'' +
                 ", password='" + getPassword() + '\'' +
                 ", name='" + getName() + '\'' +
                 ", surname='" + getSurname() + '\'' +

@@ -5,6 +5,7 @@ import ua.kozak_vitalii.project_9.domain.Category;
 import ua.kozak_vitalii.project_9.domain.Product;
 import ua.kozak_vitalii.project_9.domain.ProductOrder;
 import ua.kozak_vitalii.project_9.service.AdminService;
+import ua.kozak_vitalii.project_9.service.ClientService;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -15,11 +16,11 @@ import java.util.List;
 import java.util.StringTokenizer;
 
 public class AddToCartCommand extends Command {
-    private static final Logger logger = Logger.getLogger(AdminService.class);
-    private final AdminService adminService;
+    private static final Logger logger = Logger.getLogger(ClientService.class);
+    private final ClientService clientService;
 
-    public AddToCartCommand(AdminService adminService) {
-        this.adminService = adminService;
+    public AddToCartCommand(ClientService clientService) {
+        this.clientService = clientService;
     }
 
     @Override
@@ -49,9 +50,9 @@ public class AddToCartCommand extends Command {
         }
         session.setAttribute("shoppingcart", buylist);
 
-        List productsList = adminService.getProducts();
+        List productsList = clientService.getProducts();
         request.setAttribute("productslist", productsList);
-        request.setAttribute("buylist", buylist);
+
         return "/order.jsp";
     }
 

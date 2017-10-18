@@ -1,8 +1,10 @@
 package ua.kozak_vitalii.project_9.service;
 
 import com.sun.istack.internal.NotNull;
+import ua.kozak_vitalii.project_9.dao.CategoryDao;
 import ua.kozak_vitalii.project_9.dao.OrderDao;
 import ua.kozak_vitalii.project_9.dao.ProductDao;
+import ua.kozak_vitalii.project_9.dao.UserDao;
 import ua.kozak_vitalii.project_9.domain.Order;
 import ua.kozak_vitalii.project_9.domain.Product;
 import ua.kozak_vitalii.project_9.domain.User;
@@ -15,11 +17,15 @@ import java.util.List;
 
 public class ClientServiceImpl implements ClientService{
 
+    private UserDao userDao;
     private ProductDao productDao;
+    private CategoryDao categoryDao;
     private OrderDao orderDao;
 
-    public ClientServiceImpl(@NotNull ProductDao productDao, @NotNull OrderDao orderDao) {
+    public ClientServiceImpl(@NotNull UserDao userDao, @NotNull ProductDao productDao, @NotNull CategoryDao categoryDao, @NotNull OrderDao orderDao) {
+        this.userDao = userDao;
         this.productDao = productDao;
+        this.categoryDao = categoryDao;
         this.orderDao = orderDao;
     }
 

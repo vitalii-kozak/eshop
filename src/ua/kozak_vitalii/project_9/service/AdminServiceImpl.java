@@ -248,4 +248,25 @@ public class AdminServiceImpl implements AdminService {
 
         return orderDao.create(order) != null;
     }
+
+    @Override
+    public boolean updateOrder(Order order) throws WrongOrderDataException {
+        if (order ==null) {
+            throw new WrongOrderDataException("Order can't be null");
+        }
+        return orderDao.update(order);
+    }
+
+    @Override
+    public boolean deleteOrder(Order order) throws WrongOrderDataException {
+        if (order ==null) {
+            throw new WrongOrderDataException("Order can't be null");
+        }
+        return orderDao.delete(order);
+    }
+
+    @Override
+    public List<Order> getOrders() {
+        return orderDao.findAll();
+    }
 }

@@ -4,14 +4,19 @@ import com.sun.istack.internal.NotNull;
 import ua.kozak_vitalii.project_9.service.AdminService;
 import ua.kozak_vitalii.project_9.service.AdminServiceImpl;
 import ua.kozak_vitalii.project_9.service.ClientService;
+import ua.kozak_vitalii.project_9.service.ClientServiceImpl;
 
 public class SimpleServiceFactory extends ServiceFactory {
 
     private static SimpleServiceFactory instance;
     private DaoFactory daoFactory;
+    private AdminService adminService;
+    private ClientService clientService;
 
     private SimpleServiceFactory(@NotNull DaoFactory daoFactory) {
         this.daoFactory = daoFactory;
+        adminService = new AdminServiceImpl(daoFactory.getUserDao(), daoFactory.getProductDao(), daoFactory.getCategoryDao(), daoFactory.getOrderDao());
+        clientService = new ClientServiceImpl(daoFactory.getUserDao(), daoFactory.getProductDao(), daoFactory.getCategoryDao(), daoFactory.getOrderDao());
     }
 
     public static SimpleServiceFactory getInstance(@NotNull DaoFactory daoFactory) {
@@ -25,12 +30,12 @@ public class SimpleServiceFactory extends ServiceFactory {
 
     @Override
     public AdminService getAdminService() {
-        return new AdminServiceImpl(daoFactory.getUserDao(), daoFactory.getProductDao(), daoFactory.getCategoryDao(), daoFactory.getOrderDao());
+        return adminService;
     }
 
     @Override
     public ClientService getClientService() {
-        return null;
+        return clientService;
     }
 
 }

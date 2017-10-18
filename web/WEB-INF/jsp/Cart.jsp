@@ -1,8 +1,7 @@
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c" %>
 
-<%--<c: set var = "index"  value = "0"/>--%>
-<center>
+<div align="center">
     <table border="0" cellpadding="0" width="100%" bgcolor="#FFFFFF">
         <tr>
             <td><b>PRODUCT_ID</b></td>
@@ -29,7 +28,6 @@
                 </form>
             </td>
         </tr>
-            <%--<c:set var="index" value="${index} + 1"/>--%>
         </c:forEach>
     </table>
     <p>
@@ -39,4 +37,4 @@
         <input type="hidden" name="action" value="CHECKOUT">
         <input type="submit" name="Checkout" value="Checkout">
     </form>
-</center>
+</div>

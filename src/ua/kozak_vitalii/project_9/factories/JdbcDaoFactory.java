@@ -57,7 +57,5 @@ public class JdbcDaoFactory extends DaoFactory {
     }
 
     @Override
-    public CategoryDao getCategoryDao() {
-        return categoryDao;
-    }
+    public CategoryDao getCategoryDao() { return categoryDao; }
 }

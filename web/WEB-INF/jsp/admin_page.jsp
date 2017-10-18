@@ -7,7 +7,7 @@
 <jsp:include page="languages.jsp"/> <br>
 
 <head>
-    <h2> &nbsp;&nbsp; Registration</h2>
+    <h2> &nbsp;&nbsp; Info</h2>
 </head>
 <body>
 

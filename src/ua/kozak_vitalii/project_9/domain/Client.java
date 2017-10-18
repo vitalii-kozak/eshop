@@ -10,8 +10,8 @@ public class Client extends User {
         super(login, password, name, surname, isBlocked);
     }
 
-    public Client(@NotNull String email, @NotNull String password, @NotNull String name, @NotNull String surname) {
-        super(email, password, name, surname);
+    public Client(@NotNull String login, @NotNull String password, @NotNull String name, @NotNull String surname) {
+        super(login, password, name, surname);
     }
 
     @Override
@@ -24,7 +24,7 @@ public class Client extends User {
         String isBlockedText =  getIsBlocked() ?  "Denied" : "Allowed";
         return "Client{" +
                 "id=" + getId() +
-                ", email='" + getLogin() + '\'' +
+                ", login='" + getLogin() + '\'' +
                 ", password='" + getPassword() + '\'' +
                 ", name='" + getName() + '\'' +
                 ", surname='" + getSurname() + '\'' +

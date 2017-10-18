@@ -9,6 +9,7 @@
     <li><form name="update user" action="ShoppingServlet" method="post"><input type="hidden" name="action" value="UPDATE_USER"> <input class="myButtonMenu" type="submit" value="<c:message key="admin_menu.updateUser"/>"></form></li><li> &nbsp; </li>
     <li><form name="update user" action="ShoppingServlet" method="post"><input type="hidden" name="action" value="CATEGORY_CREATE_MENU"> <input class="myButtonMenu" type="submit" value="<c:message key="admin_menu.Category"/>"></form></li><li> &nbsp; </li>
     <li><form name="update user" action="ShoppingServlet" method="post"><input type="hidden" name="action" value="PRODUCT_CREATE_MENU"> <input class="myButtonMenu" type="submit" value="<c:message key="admin_menu.Product"/>"></form></li><li> &nbsp; </li>
+    <li><form name="update user" action="ShoppingServlet" method="post"><input type="hidden" name="action" value="ORDER_CREATE_MENU_ADMIN"> <input class="myButtonMenu" type="submit" value="<c:message key="admin_menu.Order"/>"></form></li><li> &nbsp; </li>
     <li><form name="logout" action="ShoppingServlet" method="post"><input type="hidden" name="action" value="LOGOUT"> <input class="myButtonMenu" type="submit" value="<c:message key="admin_menu.Logout"/>"></form></li><li> &nbsp; </li>
 </ul>
 </c:bundle>

@@ -6,7 +6,7 @@
 
 <head>
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/menu.css"/>
-    <h2> &nbsp;&nbsp; Products</h2>
+    <h2> &nbsp;&nbsp; Orders</h2>
 </head>
 <body>
 <jsp:include page="client_menu.jsp"/> <br>

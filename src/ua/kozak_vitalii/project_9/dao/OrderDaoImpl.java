@@ -17,14 +17,14 @@ import java.util.List;
 
 public class OrderDaoImpl implements OrderDao{
 
-    private static final Logger logger = Logger.getLogger(ProductDaoImpl.class);
+    private static final Logger logger = Logger.getLogger(OrderDaoImpl.class);
     private DataSource datasource;
     private final String SQL_BASE_QUERY_SELECTION_TEXT = "SELECT orders.*, users.*, products.*, product_orders.*, categories.* " +
             "FROM orders " +
             "LEFT JOIN users AS users ON users.id = orders.user_id " +
             "LEFT JOIN product_orders AS product_orders ON product_orders.orders_id = orders.id " +
             "LEFT JOIN products AS products ON products.id = product_orders.products_id " +
-            "LEFT JOIN categories as categories ON categories.id = products.category_id";
+            "LEFT JOIN categories as categories ON products.category_id = categories.id";
 
 
     public OrderDaoImpl(@NotNull DataSource datasource) {
@@ -95,19 +95,37 @@ public class OrderDaoImpl implements OrderDao{
             List<Order> orders = getOrderFromResultSet(result);
             if (orders.size() > 0) {
                 Order order = orders.get(0);
+                order.setProductOrders(getProductOrdersFromResultSet(result));
                 return order;
             } else {
                 return null;
             }
         } catch (SQLException e) {
-            logger.error("Failed to read from Product! " + e.getMessage());
+            logger.error("Failed to read from Orders! " + e.getMessage());
             return null;
         }
     }
 
     @Override
     public boolean update(Order order) {
-        return false;
+        String query_text = "UPDATE orders SET total_price = ?, purchase_date = ?, user_id = ?, paid = ? WHERE id = ?";
+        logger.info(query_text);
+        try (Connection connection = datasource.getConnection(); PreparedStatement statement = connection.prepareStatement(query_text)) {
+
+            statement.setBigDecimal(1, order.getTotal_price());
+            statement.setTimestamp(2, new Timestamp(order.getPurchaseDate().getTime()));
+            statement.setLong(3, order.getUser().getId());
+            statement.setBoolean(4, order.isPaid());
+            System.out.println("****************************************");
+            System.out.println(order.isPaid());
+            statement.setLong(5, order.getId());
+
+            return statement.executeUpdate() != 0;
+        } catch (SQLException e) {
+            logger.error("Failed to updated Orders! " + e.getMessage());
+
+            return false;
+        }
     }
 
     @Override
@@ -133,7 +151,46 @@ public class OrderDaoImpl implements OrderDao{
 
     @Override
     public List<Order> findAll() {
-        return null;
+
+        String query_text = "SELECT orders.*, users.* FROM orders LEFT JOIN users AS users ON users.id = orders.user_id";
+        logger.info(query_text);
+        List<Order> orders = new ArrayList<>();
+        try (Connection connection = datasource.getConnection(); Statement statement = connection.createStatement()) {
+            ResultSet result = statement.executeQuery(query_text);
+            orders = getOrderFromResultSetSimple(result);
+        } catch (SQLException e) {
+            logger.error("Failed to read from Orders! " + e.getMessage());
+        }
+        return orders;
+    }
+
+    private List<Order> getOrderFromResultSetSimple(ResultSet result) throws SQLException {
+        List<Order> orders = new ArrayList<>();
+        while (result.next()) {
+
+            long orderId = result.getLong("orders.id");
+            Timestamp purchaseDate = result.getTimestamp("orders.purchase_date");
+            boolean paid = result.getBoolean("orders.paid");
+            BigDecimal totalPrice = result.getBigDecimal("orders.total_price");
+            long userId = result.getLong("users.id");
+
+            String login = result.getString("users.login");
+            String password = result.getString("users.password");
+            String name = result.getString("users.name");
+            String surname = result.getString("users.surname");
+            boolean isBlocked = result.getBoolean("users.isBlocked");
+            UserType userType = UserType.valueOf(result.getString("users.user_type").toUpperCase());
+
+
+            User user = User.getUser(login, password, name, surname, isBlocked, userType);
+            user.setId(userId);
+
+            //Order order = new Order(getProductOrdersFromResultSet(result), user, purchaseDate, paid, totalPrice);
+            Order order = new Order(null, user, purchaseDate, paid, totalPrice);
+            order.setId(orderId);
+            orders.add(order);
+        }
+        return orders;
     }
 
     private List<Order> getOrderFromResultSet(ResultSet result) throws SQLException {

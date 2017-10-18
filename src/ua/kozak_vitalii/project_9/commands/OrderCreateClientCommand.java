@@ -7,18 +7,18 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.util.List;
 
-public class OrderCreateCommand extends Command {
+public class OrderCreateClientCommand extends Command {
 
     private static final Logger logger = Logger.getLogger(AdminService.class);
     private final AdminService adminService;
 
-    public OrderCreateCommand(AdminService adminService) {
+    public OrderCreateClientCommand(AdminService adminService) {
         this.adminService = adminService;
     }
 
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) {
-        logger.debug("OrderCreateCommand()");
+        logger.debug("OrderCreateClientCommand()");
 
         List productsList = adminService.getProducts();
         request.setAttribute("productslist", productsList);

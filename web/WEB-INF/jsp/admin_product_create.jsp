@@ -7,7 +7,7 @@
 
 <head>
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/menu.css"/>
-    <h2> &nbsp;&nbsp; Registration</h2>
+    <h2> &nbsp;&nbsp; Products</h2>
 </head>
 <body>
 <jsp:include page="admin_menu.jsp"/> <br>

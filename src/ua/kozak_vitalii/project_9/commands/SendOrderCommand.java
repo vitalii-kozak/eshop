@@ -17,10 +17,10 @@ import java.util.List;
 
 public class SendOrderCommand extends Command {
     private static final Logger logger = Logger.getLogger(AdminService.class);
-    private final AdminService adminService;
+    private final ClientService clientService;
 
-    public SendOrderCommand(AdminService adminService) {
-        this.adminService = adminService;
+    public SendOrderCommand(ClientService clientService) {
+        this.clientService = clientService;
     }
 
     @Override
@@ -40,10 +40,16 @@ public class SendOrderCommand extends Command {
         }
 
         try {
-            boolean result = adminService.addNewOrder(buylist, user, total);
+            boolean result = clientService.addNewOrder(buylist, user, total);
             if (result) {
 
                 request.setAttribute("message", "Sending is successful. "+ "order is added");
+
+                buylist.clear();
+                session.setAttribute("shoppingcart", buylist);
+                List productsList = clientService.getProducts();
+                request.setAttribute("productslist", productsList);
+
                 return "/client_page.jsp";
 
             } else {

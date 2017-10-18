@@ -101,4 +101,9 @@ public class Order {
                 ", total_price=" + total_price +
                 '}';
     }
+
+    public String getPresentation() {
+
+        return getId() + " | " + getPurchaseDate() + " | " + getUser().getId() + " | " + getUser().getFullName() + " | " + (isPaid() ? " PAID ":" NOT PAID ") + " | " + getTotal_price();
+    }
 }

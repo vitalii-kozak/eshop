@@ -19,10 +19,10 @@ public class CommandFactory {
         commands = new HashMap<>();
         commands.put("", new IndexJspCommand());
 
-        commands.put("ADD", new AddToCartCommand(serviceFactory.getAdminService()));
-        commands.put("DELETE", new DeleteFromCartCommand(serviceFactory.getAdminService()));
+        commands.put("ADD", new AddToCartCommand(serviceFactory.getClientService()));
+        commands.put("DELETE", new DeleteFromCartCommand(serviceFactory.getClientService()));
         commands.put("CHECKOUT", new CheckOutCommand());
-        commands.put("SEND_ORDER", new SendOrderCommand(serviceFactory.getAdminService()));
+        commands.put("SEND_ORDER", new SendOrderCommand(serviceFactory.getClientService()));
 
         commands.put("AUTHENTICATE", new AuthenticateCommand(serviceFactory.getAdminService()));
         commands.put("CLIENT_REGISTRATION", new ClientRegistrationCommand());
@@ -49,8 +49,13 @@ public class CommandFactory {
         commands.put("EDIT_PRODUCT_LINK", new ReturnPageEditProductCreationCommand(serviceFactory.getAdminService()));
         commands.put("UPDATE_PRODUCT_INFO", new UpdateProductInfoAdminCommand(serviceFactory.getAdminService()));
 
+        commands.put("ORDER_CREATE_MENU_ADMIN", new OrderCreateAdminCommand(serviceFactory.getAdminService()));
+        commands.put("DELETE_ORDER_ADMIN", new DeleteOrderAdminCommand(serviceFactory.getAdminService()));
+        commands.put("PAY_ORDER_ADMIN", new SetPaidOrderAdminCommand(serviceFactory.getAdminService()));
+
         commands.put("CLIENT_INFO", new ClientInfoCommand());
-        commands.put("ORDER_CREATE_MENU", new OrderCreateCommand(serviceFactory.getAdminService()));
+        commands.put("ORDER_CREATE_MENU_CLIENT", new OrderCreateClientCommand(serviceFactory.getAdminService()));
+
 
         commands.put("LOGOUT", new LogOutCommand());
 

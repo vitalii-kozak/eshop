@@ -1,9 +1,6 @@
 package ua.kozak_vitalii.project_9.service;
 
-import ua.kozak_vitalii.project_9.domain.Category;
-import ua.kozak_vitalii.project_9.domain.Client;
-import ua.kozak_vitalii.project_9.domain.Product;
-import ua.kozak_vitalii.project_9.domain.User;
+import ua.kozak_vitalii.project_9.domain.*;
 import ua.kozak_vitalii.project_9.enums.UserType;
 import ua.kozak_vitalii.project_9.exceptions.*;
 
@@ -164,4 +161,29 @@ public interface AdminService {
      *  @return <code><b>true</b></code> if operation's successful, otherwise - <code><b>false</b></code>
      */
     public boolean addNewOrder(List productOrder, User user, BigDecimal totalPrice) throws WrongOrderDataException;
+
+    /**
+     * Updates given order or creates a new one in case order's id is null
+     *
+     * @param order order to be deleted
+     * @return <code><b>true</b></code> if operation's successful, otherwise - <code><b>false</b></code>
+     * @throws WrongOrderDataException in case order is empty
+     */
+    boolean updateOrder(Order order) throws WrongOrderDataException;
+
+    /**
+     * Updates given order or creates a new one in case order's id is null
+     *
+     * @param order order to be deleted
+     * @return <code><b>true</b></code> if operation's successful, otherwise - <code><b>false</b></code>
+     * @throws WrongOrderDataException in case order is empty
+     */
+    boolean deleteOrder(Order order) throws WrongOrderDataException;
+
+    /**
+     * Returns list of all orders
+     *
+     * @return list of Order objects
+     */
+    List<Order> getOrders();
 }
