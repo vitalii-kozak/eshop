@@ -7,8 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d93d0d2b-a17e-492d-b5e0-268fb9654392" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DB.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Eshop4.mwb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Package project_9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project_9.uml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/admin_orders.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/admin_orders.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -532,7 +535,7 @@
       <workItem from="1508186103992" duration="381000" />
       <workItem from="1508242128655" duration="33124000" />
       <workItem from="1508304946149" duration="4787000" />
-      <workItem from="1508323622652" duration="5094000" />
+      <workItem from="1508323622652" duration="5133000" />
     </task>
     <task id="LOCAL-00001" summary="first">
       <created>1507627311262</created>
@@ -632,11 +635,18 @@
       <option name="project" value="LOCAL" />
       <updated>1508326119953</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="18_10_2017">
+      <created>1508329038838</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1508329038838</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="282744000" />
+    <option name="totallyTimeSpent" value="282783000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />

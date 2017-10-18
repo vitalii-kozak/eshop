@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>ua.kozak_vitalii.project_9</OriginalElement>
+  <nodes>
+    <node x="487.0" y="80.0">ua.kozak_vitalii.project_9.factories.SimpleServiceFactory</node>
+    <node x="313.0" y="914.0">ua.kozak_vitalii.project_9.filters.LocalizationFilter</node>
+    <node x="905.0" y="751.0">ua.kozak_vitalii.project_9.enums.UserType</node>
+    <node x="539.0" y="0.0">ua.kozak_vitalii.project_9.factories.ServiceFactory</node>
+    <node x="255.0" y="367.0">ua.kozak_vitalii.project_9.dao.CategoryDaoImpl</node>
+    <node x="597.0" y="367.0">ua.kozak_vitalii.project_9.dao.ProductDaoImpl</node>
+    <node x="0.0" y="610.0">ua.kozak_vitalii.project_9.dao.UserDaoImpl</node>
+    <node x="342.0" y="610.0">ua.kozak_vitalii.project_9.dao.OrderDaoImpl</node>
+    <node x="395.0" y="1086.0">ua.kozak_vitalii.project_9.Main</node>
+    <node x="266.25" y="0.0">ua.kozak_vitalii.project_9.domain.User</node>
+    <node x="805.5" y="0.0">ua.kozak_vitalii.project_9.service.AdminService</node>
+    <node x="503.0" y="914.0">ua.kozak_vitalii.project_9.enums.ServiceType</node>
+    <node x="46.0" y="287.0">ua.kozak_vitalii.project_9.service.ClientService</node>
+    <node x="344.0" y="287.0">ua.kozak_vitalii.project_9.dao.CategoryDao</node>
+    <node x="684.0" y="530.0">ua.kozak_vitalii.project_9.domain.Order</node>
+    <node x="689.0" y="287.0">ua.kozak_vitalii.project_9.dao.ProductDao</node>
+    <node x="713.0" y="1011.0">ua.kozak_vitalii.project_9.exceptions.AuthenticationException</node>
+    <node x="248.0" y="1011.0">ua.kozak_vitalii.project_9.exceptions.WrongOrderDataException</node>
+    <node x="803.0" y="914.0">ua.kozak_vitalii.project_9.exceptions.WrongCategoryDataException</node>
+    <node x="0.0" y="1086.0">ua.kozak_vitalii.project_9.exceptions.RegistrationException</node>
+    <node x="0.0" y="367.0">ua.kozak_vitalii.project_9.service.ClientServiceImpl</node>
+    <node x="762.0" y="80.0">ua.kozak_vitalii.project_9.service.AdminServiceImpl</node>
+    <node x="50.0" y="0.0">ua.kozak_vitalii.project_9.factories.DaoFactory</node>
+    <node x="0.0" y="751.0">ua.kozak_vitalii.project_9.domain.Product</node>
+    <node x="101.5" y="530.0">ua.kozak_vitalii.project_9.dao.UserDao</node>
+    <node x="0.0" y="914.0">ua.kozak_vitalii.project_9.factories.CommandFactory</node>
+    <node x="213.0" y="751.0">ua.kozak_vitalii.project_9.servlets.ShoppingServlet</node>
+    <node x="0.0" y="80.0">ua.kozak_vitalii.project_9.factories.JdbcDaoFactory</node>
+    <node x="504.0" y="751.0">ua.kozak_vitalii.project_9.domain.ProductOrder</node>
+    <node x="255.0" y="212.0">ua.kozak_vitalii.project_9.domain.Admin</node>
+    <node x="440.0" y="530.0">ua.kozak_vitalii.project_9.dao.OrderDao</node>
+    <node x="484.0" y="1011.0">ua.kozak_vitalii.project_9.exceptions.WrongUserDataException</node>
+    <node x="209.0" y="1086.0">ua.kozak_vitalii.project_9.commands</node>
+    <node x="725.0" y="751.0">ua.kozak_vitalii.project_9.domain.Category</node>
+    <node x="0.0" y="1011.0">ua.kozak_vitalii.project_9.exceptions.WrongProductDataException</node>
+    <node x="661.0" y="914.0">ua.kozak_vitalii.project_9.enums.DaoType</node>
+    <node x="361.0" y="212.0">ua.kozak_vitalii.project_9.domain.Client</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="ua.kozak_vitalii.project_9.dao.CategoryDaoImpl" target="ua.kozak_vitalii.project_9.dao.CategoryDao">
+      <point x="0.0" y="-48.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="ua.kozak_vitalii.project_9.factories.SimpleServiceFactory" target="ua.kozak_vitalii.project_9.factories.ServiceFactory">
+      <point x="0.0" y="-59.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="ua.kozak_vitalii.project_9.service.AdminServiceImpl" target="ua.kozak_vitalii.project_9.service.AdminService">
+      <point x="0.0" y="-59.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="ua.kozak_vitalii.project_9.dao.ProductDaoImpl" target="ua.kozak_vitalii.project_9.dao.ProductDao">
+      <point x="0.0" y="-48.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="ua.kozak_vitalii.project_9.dao.UserDaoImpl" target="ua.kozak_vitalii.project_9.dao.UserDao">
+      <point x="0.0" y="-48.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="ua.kozak_vitalii.project_9.dao.OrderDaoImpl" target="ua.kozak_vitalii.project_9.dao.OrderDao">
+      <point x="0.0" y="-48.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="ua.kozak_vitalii.project_9.domain.Client" target="ua.kozak_vitalii.project_9.domain.User">
+      <point x="0.0" y="-15.0" />
+      <point x="401.5" y="187.0" />
+      <point x="391.5" y="187.0" />
+      <point x="41.75" y="81.0" />
+    </edge>
+    <edge source="ua.kozak_vitalii.project_9.domain.Admin" target="ua.kozak_vitalii.project_9.domain.User">
+      <point x="0.0" y="-15.0" />
+      <point x="298.0" y="187.0" />
+      <point x="308.0" y="187.0" />
+      <point x="-41.75" y="81.0" />
+    </edge>
+    <edge source="ua.kozak_vitalii.project_9.factories.JdbcDaoFactory" target="ua.kozak_vitalii.project_9.factories.DaoFactory">
+      <point x="0.0" y="-81.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="ua.kozak_vitalii.project_9.service.ClientServiceImpl" target="ua.kozak_vitalii.project_9.service.ClientService">
+      <point x="0.0" y="-59.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.7000000000000001" x="687.1428571428571" y="572.2857142857142" />
+  <SelectedNodes>
+    <node>ua.kozak_vitalii.project_9.Main</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
